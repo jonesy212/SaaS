@@ -4,6 +4,10 @@ makes pseudo class global for css variables and
 *****/
 
 :root{
+  --primary-color: rgba(13,110,139, .75);
+  --overlay-color: rgba(24, 39, 51, .85);
+  --menu-speed: 0.75s;
+
   --font-color-base: red;
   --white: #fff;
   --black: #000;
@@ -50,6 +54,7 @@ body{
   color: var(--font-color-base);
   margin: 0;
   padding: 0;
+  border: 4px solid green;
 }
 
 
@@ -92,6 +97,7 @@ img{
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   /**allows top and bottom margin to be set later with no issues**/
 } 
 

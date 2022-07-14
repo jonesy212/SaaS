@@ -1,15 +1,4 @@
 /**accommodates mobile responsive**/
-/**minimum of about 640px**********/
-/**calculates the number of cards needed for a row**/
-
-@media screen and (min-width: 60em) {
-  .card {
-      flex: 0 1 calc(25% - 1em);
-  }
-}
-
-
-/**accommodates mobile responsive**/
 /**minimum of about 320px**********/
 @media screen and (min-width: 40em) {
   .cards {
@@ -24,10 +13,14 @@
 }
 
 
+/**break points
+converted to px 
+***>
+/**accommodates mobile responsive**/
+/**320px-832px**********/
 
-
-
-/**break points***/
+/*CONVERTER*/
+/* https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
 
 @media screen and (min-width: 40em) {
   .cards {
@@ -46,9 +39,15 @@
 }
 
 
-/**largest card**/
+/**
 @media screen and (min-width: 52em) {
   .container {
       
   }
-}
+
+/**largest card**>
+@media screen and (min-width: 60em) {
+  .container {
+      
+  }
+} */
