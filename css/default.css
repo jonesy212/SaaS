@@ -17,7 +17,7 @@ makes pseudo class global for css variables and
   --font-color-link: #3378FE;
   --footer: #34314b;
   --footer-base: #2e2b45;
-  --contrast: rgba(222, 223, 223, 0.8);;
+  --contrast: rgba(222, 223, 223, 0.8);
   --success: #64ECF5;
   --danger: #FF8B8D;
   --grad-1: #a1ecff;

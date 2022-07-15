@@ -1,12 +1,24 @@
+.header-background-overlay{
+  margin-top: -4rem;
+  background-color: var(--background-1);
+  transform: skewY(-10deg);
+  margin-bottom: 20rem;
+    padding-bottom: 25rem;
+}
+
+.container{
+  transform: skewY(10deg);
+}
+
 .project-logo{
   width: 7rem;
   height: 7rem;
-  margin: 1rem 0 0px 0rem;
+  margin: 5rem 0 0px 0rem;
 }
 
 .hamburger-wrap{
   position: fixed;
-  top: 0;
+  top: 4.3em;
   left: 0;
   z-index: 1;
 }
@@ -34,7 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .4s ease
+  transition: all .4s ease;
 }
 
 /**hamburger line**/
@@ -87,11 +99,12 @@
   transform: rotate(90deg);
 }
 
+
 .header-text-box h1 {
   margin: 0;
   line-height: 1;
   margin-bottom: 0.8rem;
-  font-size: xx-large;
+  font-size: 2.2rem;
 }
 
 .header-text-box .subtext{
@@ -113,13 +126,13 @@
 i{padding-right:.5rem}
 
 .play-video-btn span{
-  width: 10em;
+  width: 12em;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   color: white;
   border-radius: 2rem;
-  padding:1em;
+  padding: 1.3em;
   font-weight: bold;
   background-color: var(--font-color-link)
 }
@@ -127,9 +140,63 @@ i{padding-right:.5rem}
 .play-and-learn span a,  
 .fa-chevron-right{
   font-weight: bold;
+  font-size:1rem
 }
 
 .fa-chevron-right, 
 .play-and-learn a {
 color: var(--font-color-link)
 }
+
+.logo-icons{
+  width: 30rem;
+}
+
+.logo-icon{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 4rem;
+  transform: skewY(10deg);
+  width: 9rem;
+  box-shadow: 0 0 20px  rgba(83, 83, 83, .3);
+
+}
+
+.logo-icons .google-icon {
+  position: relative;
+  right: 22px;
+  top: 56px;
+  width: 7rem;
+
+}
+
+.logo-icons .atlassian-icon {
+  position: relative;
+  right: 48px;
+  top: 156px;
+  padding: 1.7rem;
+}
+
+.logo-icons .paypal-icon {
+  position: relative;
+  left: 1.7rem;
+  top: 19.5rem;
+}
+
+.logo-icons .asana-icon {
+  position: relative;
+  right: 7.5rem;
+  top: 8rem;
+}
+
+.logo-icons .weave-icon {
+  position: relative;
+  right: 4.5rem;
+  top: 21.4rem;
+}
+
+
+
