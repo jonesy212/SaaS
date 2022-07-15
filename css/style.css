@@ -124,13 +124,15 @@
   margin-top: 2rem
 }
 
-.play-video-btn{
+.play-video-btn,
+.getting-started-btn{
   padding-right: 5%
 }
 
 i{padding-right:.5rem}
 
-.play-video-btn span{
+.play-video-btn span,
+.getting-started-btn {
   width: 8em;
   display: flex;
   align-items: center;
@@ -143,14 +145,31 @@ i{padding-right:.5rem}
   font-size: 1.3rem;
 }
 
+
+
 .play-and-learn span a,  
 .fa-chevron-right{
   font-weight: bold;
   font-size: 1rem
 }
 
+.getting-started-btn{
+  margin: 2rem 0;
+}
 
+.getting-started-btn .fa-chevron-right{
+  color: white;
+  font-weight: 800
+}
 
+.getting-started-btn span{
+  display: flex;
+  align-items: center;
+}
+
+.getting-started-btn span i{
+  padding-left: .5rem
+}
 .fa-chevron-right, 
 .play-and-learn a {
 color: var(--font-color-link)
@@ -216,7 +235,7 @@ color: var(--font-color-link)
 }
 
 /**BENEFITS HEADING**/
-.container.benefits{
+.container.main{
   display:flex;
   flex-direction: column;
   text-align: center;
@@ -224,19 +243,25 @@ color: var(--font-color-link)
   transform: none;
 }
 
-.benefits .benefit-heading{
+ .benefit-heading{
   font-size: 2rem;
   font-weight: 700;
 }
 
+
 /***CARDS***/
+
 .card{
   border: 1px solid transparent;
   padding: 0 1.5rem 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 10px 63px rgb(233 231 233);
-  margin: 1rem 0;
+  box-shadow: 0 10px 35px 0px rgb(233 231 233);
+  margin:  1rem 0 1.2rem;
   border-top: none;
+}
+
+.card.top-fade{
+  box-shadow: 0 6px 11px 0px rgb(233 231 233)
 }
 
 .card-content .card-image {
@@ -271,4 +296,24 @@ color: var(--font-color-link)
 
 .fa-chevron-right {
   font-size: small;
+}
+
+
+/**WHY FRONT**/
+
+section.container.main{
+  margin-top:0 0;
+
+}
+.why-front-section{
+  border-radius: .5rem;
+  background-color: #EDEEF4;
+  padding-left: 2rem
+}
+
+.why-front-header{
+  font-size: 1.8em;
+  text-align: left;
+  font-weight: 700;
+  padding-top: 4rem;
 }
