@@ -72,6 +72,8 @@ ul{
 
 a{
   text-decoration: none;
+  cursor: pointer;
+  color: var(--font-color-link);
 }
 
 p{
