@@ -2,8 +2,8 @@
   margin-top: -4rem;
   background-color: var(--background-1);
   transform: skewY(-10deg);
-  margin-bottom: 20rem;
-    padding-bottom: 25rem;
+  margin-bottom: 5rem;
+  padding-bottom: 25rem;
 }
 
 .container{
@@ -12,7 +12,7 @@
 
 .project-logo{
   width: 7rem;
-  height: 7rem;
+  height: 4.5rem;
   margin: 5rem 0 0px 0rem;
 }
 
@@ -107,6 +107,12 @@
   font-size: 2.2rem;
 }
 
+.subtext{
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--font-color-light);
+}
+
 .header-text-box .subtext{
   font-size: x-large;
 }
@@ -118,7 +124,6 @@
   margin-top: 2rem
 }
 
-
 .play-video-btn{
   padding-right: 5%
 }
@@ -126,22 +131,25 @@
 i{padding-right:.5rem}
 
 .play-video-btn span{
-  width: 12em;
+  width: 8em;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   border-radius: 2rem;
-  padding: 1.3em;
+  padding: 0.5em;
   font-weight: bold;
-  background-color: var(--font-color-link)
+  background-color: var(--font-color-link);
+  font-size: 1.3rem;
 }
 
 .play-and-learn span a,  
 .fa-chevron-right{
   font-weight: bold;
-  font-size:1rem
+  font-size: 1rem
 }
+
+
 
 .fa-chevron-right, 
 .play-and-learn a {
@@ -163,6 +171,10 @@ color: var(--font-color-link)
   width: 9rem;
   box-shadow: 0 0 20px  rgba(83, 83, 83, .3);
 
+}
+
+.logo-icon li{
+  padding: 0.3rem
 }
 
 .logo-icons .google-icon {
@@ -196,6 +208,20 @@ color: var(--font-color-link)
   position: relative;
   right: 4.5rem;
   top: 21.4rem;
+}
+
+/**BENEFITS HEADING**/
+.container.benefits{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  transform: none;
+}
+
+.benefits .benefit-heading{
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 
