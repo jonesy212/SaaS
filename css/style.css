@@ -260,3 +260,15 @@ color: var(--font-color-link)
   margin-bottom:1.3rem;
 }
 
+.card-title span{
+  background-color: #5BC4A9;
+  color:white;
+  border-radius:1rem;
+  padding: .3rem .5rem ;
+  font-size: .7em;
+  margin-left: .4em
+}
+
+.fa-chevron-right {
+  font-size: small;
+}
