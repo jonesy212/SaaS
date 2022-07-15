@@ -231,7 +231,12 @@ color: var(--font-color-link)
 
 /***CARDS***/
 .card{
-  padding: 0 1.5rem;
+  border: 1px solid transparent;
+  padding: 0 1.5rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 63px rgb(233 231 233);
+  margin: 1rem 0;
+  border-top: none;
 }
 
 .card-content .card-image {
