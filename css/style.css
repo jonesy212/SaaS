@@ -2,8 +2,8 @@
   margin-top: -4rem;
   background-color: var(--background-1);
   transform: skewY(-10deg);
-  margin-bottom: 5rem;
-  padding-bottom: 25rem;
+  margin-bottom: 4rem;
+  padding-bottom: 21rem;
 }
 
 .container{
@@ -157,7 +157,9 @@ color: var(--font-color-link)
 }
 
 .logo-icons{
-  width: 30rem;
+  width: 26rem;
+  position: relative;
+  right: 3rem;
 }
 
 .logo-icon{
@@ -177,37 +179,40 @@ color: var(--font-color-link)
   padding: 0.3rem
 }
 
-.logo-icons .google-icon {
-  position: relative;
-  right: 22px;
-  top: 56px;
-  width: 7rem;
 
+
+.logo-icons .google-icon {
+  left: 36px;
+  top: 56px;
+  width: 17rem;
 }
 
 .logo-icons .atlassian-icon {
   position: relative;
-  right: 48px;
-  top: 156px;
-  padding: 1.7rem;
+  left: 28px;
+  top: 133px;
+  padding: 1.4rem;
+  width: 21rem;
 }
 
 .logo-icons .paypal-icon {
   position: relative;
-  left: 1.7rem;
-  top: 19.5rem;
+  left: 6.7rem;
+  top: 16.2rem;
+  width: 17rem;
 }
 
 .logo-icons .asana-icon {
   position: relative;
-  right: 7.5rem;
+  right: 0.5rem;
   top: 8rem;
+  width: 24rem;
 }
 
 .logo-icons .weave-icon {
-  position: relative;
-  right: 4.5rem;
-  top: 21.4rem;
+  left: 1.9rem;
+  width: 24rem;
+  top: 17.7rem;
 }
 
 /**BENEFITS HEADING**/
@@ -223,6 +228,8 @@ color: var(--font-color-link)
   font-size: 2rem;
   font-weight: 700;
 }
+
+
 
 
 
