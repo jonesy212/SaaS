@@ -229,7 +229,46 @@ color: var(--font-color-link)
   font-weight: 700;
 }
 
+/***CARDS***/
+.card{
+  border: 1px solid transparent;
+  padding: 0 1.5rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 63px rgb(233 231 233);
+  margin: 1rem 0;
+  border-top: none;
+}
 
+.card-content .card-image {
+  width: 4rem;
+  padding-top: 4rem
+}
 
+.card-content .card-text{
+  text-align: justify;
+}
 
+.card-title{
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 1em 0 .5em
+}
 
+.card-subtext {
+  margin-right: 2.5rem;
+  font-size: 1.2em;
+  margin-bottom:1.3rem;
+}
+
+.card-title span{
+  background-color: #5BC4A9;
+  color:white;
+  border-radius:1rem;
+  padding: .3rem .5rem ;
+  font-size: .7em;
+  margin-left: .4em
+}
+
+.fa-chevron-right {
+  font-size: small;
+}
