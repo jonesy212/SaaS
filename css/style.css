@@ -1,0 +1,235 @@
+.header-background-overlay{
+  margin-top: -4rem;
+  background-color: var(--background-1);
+  transform: skewY(-10deg);
+  margin-bottom: 4rem;
+  padding-bottom: 21rem;
+}
+
+.container{
+  transform: skewY(10deg);
+}
+
+.project-logo{
+  width: 7rem;
+  height: 4.5rem;
+  margin: 5rem 0 0px 0rem;
+}
+
+.hamburger-wrap{
+  position: fixed;
+  top: 4.3em;
+  left: 0;
+  z-index: 1;
+}
+
+.hamburger-wrap .toggle{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0
+}
+
+.hamburger-wrap .hamburger {
+  position: absolute;
+  top: 0.8em;
+  left: 22em;
+  z-index: 1;
+  width: 54px;
+  height: 71px;
+  padding: 1rem;
+  /* background: var(--primary-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease;
+}
+
+/**hamburger line**/
+.hamburger-wrap .hamburger > div{
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: var(--font-color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.hamburger-wrap .hamburger > div:before
+/* add comma,
+  extra line if necessary
+.hamburger-wrap .hamburger > div:after */
+{
+  content:"";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 4px;
+  background: inherit;
+  border-radius: inherit;
+}
+
+
+/**bottom-line**/
+.hamburger-wrap .hamburger > div:after{
+  top: 10px;
+}
+
+/**animate menu**/
+.hamburger-wrap .toggle:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/** turns line into an x**/
+
+.hamburger-wrap .toggle:checked + .hamburger > div:before
+/* add comma,
+  if xtra line is used
+  .hamburger-wrap .toggle:checked + .hamburger > div:after */
+
+{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+
+.header-text-box h1 {
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+  font-size: 2.2rem;
+}
+
+.subtext{
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--font-color-light);
+}
+
+.header-text-box .subtext{
+  font-size: x-large;
+}
+
+.play-and-learn{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-top: 2rem
+}
+
+.play-video-btn{
+  padding-right: 5%
+}
+
+i{padding-right:.5rem}
+
+.play-video-btn span{
+  width: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.5em;
+  font-weight: bold;
+  background-color: var(--font-color-link);
+  font-size: 1.3rem;
+}
+
+.play-and-learn span a,  
+.fa-chevron-right{
+  font-weight: bold;
+  font-size: 1rem
+}
+
+
+
+.fa-chevron-right, 
+.play-and-learn a {
+color: var(--font-color-link)
+}
+
+.logo-icons{
+  width: 26rem;
+  position: relative;
+  right: 3rem;
+}
+
+.logo-icon{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 4rem;
+  transform: skewY(10deg);
+  width: 9rem;
+  box-shadow: 0 0 20px  rgba(83, 83, 83, .3);
+
+}
+
+.logo-icon li{
+  padding: 0.3rem
+}
+
+
+
+.logo-icons .google-icon {
+  left: 36px;
+  top: 56px;
+  width: 17rem;
+}
+
+.logo-icons .atlassian-icon {
+  position: relative;
+  left: 28px;
+  top: 133px;
+  padding: 1.4rem;
+  width: 21rem;
+}
+
+.logo-icons .paypal-icon {
+  position: relative;
+  left: 6.7rem;
+  top: 16.2rem;
+  width: 17rem;
+}
+
+.logo-icons .asana-icon {
+  position: relative;
+  right: 0.5rem;
+  top: 8rem;
+  width: 24rem;
+}
+
+.logo-icons .weave-icon {
+  left: 1.9rem;
+  width: 24rem;
+  top: 17.7rem;
+}
+
+/**BENEFITS HEADING**/
+.container.benefits{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  transform: none;
+}
+
+.benefits .benefit-heading{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+
+

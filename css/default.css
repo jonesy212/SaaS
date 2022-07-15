@@ -4,16 +4,20 @@ makes pseudo class global for css variables and
 *****/
 
 :root{
+  --primary-color: rgba(13,110,139, .75);
+  --overlay-color: rgba(24, 39, 51, .85);
+  --menu-speed: 0.75s;
+
   --font-color-base: red;
   --white: #fff;
   --black: #000;
   --font-color-base: rgb(83, 83, 83);
   --font-color-dark: #212529;
-  --font-color-light: #8E9BA7;
+  --font-color-light: ##6b7686;
   --font-color-link: #3378FE;
   --footer: #34314b;
   --footer-base: #2e2b45;
-  --contrast: rgba(222, 223, 223, 0.8);;
+  --contrast: rgba(222, 223, 223, 0.8);
   --success: #64ECF5;
   --danger: #FF8B8D;
   --grad-1: #a1ecff;
@@ -50,6 +54,7 @@ body{
   color: var(--font-color-base);
   margin: 0;
   padding: 0;
+  border: 4px solid green;
 }
 
 
@@ -92,6 +97,7 @@ img{
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   /**allows top and bottom margin to be set later with no issues**/
 } 
 
