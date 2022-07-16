@@ -268,25 +268,32 @@ color: var(--font-color-link)
   margin: 1rem 0 3.2rem;
 }
 
-.card-content .card-image {
+.card-content .card-image,
+.bulletpoint-content .bulletpoint-image
+ {
   width: 4rem;
   padding-top: 4rem
 }
 
-.card-content .card-text{
+.card-content .card-text,
+.bulletpoint-content .bulletpoint-text
+{
   text-align: justify;
 }
 
-.card-title{
+.card-title,
+.bulletpoint-title{
   font-size: 1.4em;
   font-weight: 700;
   margin: 1em 0 .5em
 }
 
-.card-subtext {
+.card-subtext,
+.bulletpoint-subtext {
   margin-right: 2.5rem;
   font-size: 1.2em;
   margin-bottom:1.3rem;
+  color: #717C8B;
 }
 
 .card-title span{
@@ -468,6 +475,7 @@ h6{
 .price-container .subtext{
   font-size: 1rem;
   padding-bottom: 3rem;
+  color: #717C8B;
 }
 
 
@@ -475,6 +483,12 @@ h6{
 .price-text,
 .no-credit-required{
   text-align: left;
+  
+}
+
+.price-text,
+.no-credit-required{
+  color: #717C8B;  
 }
 
 .no-credit-required{
@@ -488,4 +502,122 @@ color: var(--subtext-1);
 
 .price-info span{
   font-weight: 400
+}
+
+.inner-price-container .point-1 {
+  padding-top: 4rem;
+}
+
+.bulletpoint-content .bulletpoint-image {
+  padding-top: 2rem;
+}
+
+
+.hire-us-container{
+  background-color: #29365B;
+  background-image: url("/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg");
+  border-radius: .5rem;
+  background-size:cover;
+  padding: 2rem
+}
+
+.people-images{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hire-us-title{
+  text-align: left;
+  font-size: 2em;
+  font-weight: 500;
+  color: white;
+  text-align: left
+}
+
+.hire-us-subtext {
+  font-size: 1.2em;
+  margin-bottom:1.3rem;
+  color: var(--contrast);
+  text-align: left
+}
+
+.hire-use-content .hr-line{
+  position: relative;
+  bottom: 0px;
+  right: 68px;
+  margin-bottom: 1.3rem;
+  width: 50%;
+  opacity: 30%;
+}
+
+.name-and-title {
+  color:white;
+  text-align: left;
+  padding: 2rem 0 3rem 0;
+}
+
+.hire-us h6{
+  color: var(--contrast);
+  font-size: .8em;
+}
+
+.quote{
+  color: white;
+  font-size: 1.5em;
+  text-align: left
+}
+
+.person>img{
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  border-radius: 5rem;
+}
+
+.person.man>img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.hire-us-form{
+  padding: 1.3rem;
+  text-align:left;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.hire-us-text{
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.privacy-policy{
+  display:flex;
+}
+
+.privacy-policy a{
+  border-bottom: dotted;
+  color: rgb(52 54 54 / 80%);
+}
+
+.main-inputs,
+select{
+  width: 100%;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1.2rem;
+  border: 1px gray solid
+}
+
+#firstName{
+  margin-top: 1.4em
+}
+
+form .getting-started-btn{
+  width:100%;
+  height: 4rem;
+  margin: 2em 0 0 0;
+  border-radius: .5rem;
 }
