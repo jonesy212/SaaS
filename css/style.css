@@ -434,3 +434,16 @@ h6{
   color: var(--subtext-1);
   font-weight: 500
 }
+
+/**TRUSTED LOGO**/
+
+.trusted-title{
+  margin: 2rem;
+}
+.trusted-logos{
+  display: flex;
+  justify-content:space-between;
+}
+.logo{
+  width: 6rem;
+}
