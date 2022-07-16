@@ -438,12 +438,35 @@ h6{
 /**TRUSTED LOGO**/
 
 .trusted-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #717C8B;
   margin: 2rem;
 }
+
 .trusted-logos{
   display: flex;
-  justify-content:space-between;
+  margin-bottom: 4rem;
+  justify-content: space-around;
 }
 .logo{
   width: 6rem;
+}
+
+.hr-line{
+  background-color: #EAEDF5;
+  border:none;
+  height: 1px
+}
+
+.price-heading{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1F2023;
+  padding: 3rem 0 .5rem;
+}
+
+.price-container .subtext{
+  font-size: 1rem;
+  padding-bottom: 3rem;
 }
