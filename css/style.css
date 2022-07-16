@@ -518,7 +518,6 @@ color: var(--subtext-1);
   background-image: url("/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg");
   border-radius: .5rem;
   background-size:cover;
-  padding: 2rem
 }
 
 .people-images{
@@ -552,7 +551,7 @@ color: var(--subtext-1);
   opacity: 30%;
 }
 
-.name-and-title {
+.name-and-title.hire-us {
   color:white;
   text-align: left;
   padding: 2rem 0 3rem 0;
@@ -579,6 +578,16 @@ color: var(--subtext-1);
 .person.man>img{
   width: 4rem;
   height: 4rem;
+}
+
+.form-outline{
+  padding: 2rem;
+  border: 1px solid #323f5e;
+  width: 100%;
+  border-radius: .5rem;
+  background-image: url("/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg");
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .hire-us-form{
@@ -620,4 +629,66 @@ form .getting-started-btn{
   height: 4rem;
   margin: 2em 0 0 0;
   border-radius: .5rem;
+}
+
+/***FOOTER**/
+.project-logo.footer-logo{
+  height: 4rem;
+}
+
+.footer-contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-phone-info, .address-info{
+  display: flex;
+}
+
+.address{
+  margin-bottom: 1rem;
+}
+
+.company-and-features{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+  justify-items: start;
+  margin-top: 3rem;
+}
+
+.footer-title{
+  font-weight: 700;
+  font-size: medium;
+  text-align: left;
+}
+
+.list-items{
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  color:#717C8B;
+}
+
+.list-item{
+  padding-bottom: 0.5rem;
+}
+
+.list-item:nth-child(2){
+  display: flex;
+  font-size: 1rem;
+}
+.list-item.hiring:nth-child(2) div{
+ margin-left: .3rem;
+ background-color: var(--font-color-link);
+ color: white;
+ border-radius: .3rem;
+ text-align: center;
+ font-size: .6rem;
+ margin-top: 0.2rem;
+ padding: 0.2rem 0.3rem;
+ font-weight: 700;
+}
+
+.resource.list-item, .phone.list-item{
+  display: flex;
 }
