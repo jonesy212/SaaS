@@ -449,9 +449,7 @@ h6{
   margin-bottom: 4rem;
   justify-content: space-around;
 }
-.logo{
-  width: 6rem;
-}
+.logo{ width: 6rem;}
 
 .hr-line{
   background-color: #EAEDF5;
@@ -459,14 +457,35 @@ h6{
   height: 1px
 }
 
+.price,
 .price-heading{
   font-size: 2rem;
   font-weight: 600;
   color: #1F2023;
-  padding: 3rem 0 .5rem;
 }
+
 
 .price-container .subtext{
   font-size: 1rem;
   padding-bottom: 3rem;
+}
+
+
+.price,
+.price-text,
+.no-credit-required{
+  text-align: left;
+}
+
+.no-credit-required{
+color: var(--subtext-1);
+}
+.price-heading{ padding: 3rem 0 .5rem;}
+.price-info .getting-started-btn{ margin: 3rem 0 0.2rem 0;}
+
+.price-info .hr-line{ margin: 1.5rem 0;}
+.price-info.card{ box-shadow: 0 10px 16px 0px rgb(233 231 233);}
+
+.price-info span{
+  font-weight: 400
 }
