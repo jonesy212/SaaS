@@ -77,6 +77,8 @@
 }
 
 
+/**HAMBURGER DESIGN AND ANIMATION**/
+
 /**bottom-line**/
 .hamburger-wrap .hamburger > div:after{
   top: 10px;
@@ -145,8 +147,6 @@ i{padding-right:.5rem}
   font-size: 1.3rem;
 }
 
-
-
 .play-and-learn span a,  
 .fa-chevron-right{
   font-weight: bold;
@@ -197,8 +197,6 @@ color: var(--font-color-link)
 .logo-icon li{
   padding: 0.3rem
 }
-
-
 
 .logo-icons .google-icon {
   left: 36px;
@@ -260,8 +258,14 @@ color: var(--font-color-link)
   border-top: none;
 }
 
+
 .card.top-fade{
   box-shadow: 0 6px 11px 0px rgb(233 231 233)
+}
+
+.card:last-child{
+  box-shadow: 0 10px 35px 0px rgb(233 231 233);
+  margin: 1rem 0 3.2rem;
 }
 
 .card-content .card-image {
@@ -303,11 +307,15 @@ color: var(--font-color-link)
 
 section.container.main{
   margin-top:0 0;
-
 }
+
+.why-front {
+  margin-top: 3rem;
+}
+
 .why-front-section{
   border-radius: .5rem;
-  background-color: #EDEEF4;
+  background-color: #EDF0F7;
   padding-left: 2rem
 }
 
@@ -316,4 +324,113 @@ section.container.main{
   text-align: left;
   font-weight: 700;
   padding-top: 4rem;
+}
+
+/**CIRCLES***/
+
+.list-items{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.circle{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  background-color: #ECF3FE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle{
+  display:flex;
+  justify-content: center;
+  width:.3rem;
+  height:.3rem;
+  border-radius: 4rem;
+  background-color: var(  --font-color-link);
+}
+
+.item-content{
+  display: flex;
+  align-items: flex-start;
+  padding: .5rem 0;
+}
+
+.item-title{
+  margin: 0 1rem;
+}
+
+.separator{
+  margin-left: 29px;
+  bottom: 72px;
+  width:.2rem;
+  height:1rem;
+  background-color: var( --contrast);
+  border-radius: .2em
+}
+
+.item-title{
+  font-size:1.2rem;
+  font-weight: 700
+}
+
+.image-and-play-btn{
+  position: relative
+}
+
+.image-and-play-btn>img{
+  border-radius: 0.3rem;
+  position: relative
+}
+
+.play-circle{
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border: .5px solid transparent;
+  box-shadow: 0 0 8px 0px rgb(83 83 83 / 8%);
+  position: absolute;
+  top: 33%;
+  right: 42%;
+}
+
+.fa-play{ 
+  padding: 0}
+
+.woman-and-dots img:first-child{
+  border-radius: .5rem;
+  margin: 1rem 0 ;
+}
+
+.woman-and-dots img:last-child{
+  width: 47%;
+  position: relative;
+  bottom: 270px;
+  right: 106px;
+  z-index: -1;
+}
+
+.company-logo{
+  width: 7rem;
+  height: 4rem;
+}
+
+.company-content{
+  text-align: left;
+}
+
+.company-text{
+  font-size: 1.3rem
+}
+
+h6{
+  margin: 0;
+  color: var(--subtext-1);
+  font-weight: 500
 }
