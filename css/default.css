@@ -131,3 +131,20 @@ ul{
   background-color:var(--white);
   color:var(--font-color-link)
 }
+
+
+/**GENERAL @media responsive queries**/
+@media(min-width: 768px){
+  .testimonial-container,
+  .price-container,
+  .footer-bottom-container{max-width: 720px;}
+}
+
+@media(min-width: 992px){
+  .footer-top-container, .container {max-width: 968px}
+}
+
+
+@media(min-width: 1200px){
+  .container{max-width: 1140px}
+}

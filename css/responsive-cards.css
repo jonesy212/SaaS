@@ -1,0 +1,84 @@
+/**accommodates mobile responsive**/
+/**minimum of about 320px**********/
+@media screen and (min-width: 40em) {
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      margin: auto auto 13px;
+  }
+
+  .card {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 0 1 calc(50% - 1em);
+  }
+  .card-content{
+    padding-right: 1.5rem;
+  }
+
+  .card-content div {
+    text-align: -webkit-auto;
+  }
+  
+  .card-content:nth-child(3){
+    text-align: justify;
+    padding-top: 0.5rem;
+
+  }
+
+  .card.top-fade{
+    box-shadow: 0 20px 26px -6px rgb(233 231 233);
+  } 
+
+  .card-subtext, .bulletpoint-subtext {
+    margin-right: 0;
+  } 
+
+
+
+  
+}
+
+
+/**break points
+converted to px 
+***>
+/**accommodates mobile responsive**/
+/**320px-832px**********/
+
+/*CONVERTER*/
+/* https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+
+@media screen and (min-width: 40em) {
+  .cards {
+ }
+
+  .card {
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .cards {
+
+ }
+   
+  .card {
+   }
+}
+
+
+/**
+@media screen and (min-width: 52em) {
+  .container {
+      
+  }
+
+/**largest card**>
+@media screen and (min-width: 60em) {
+  .container {
+      
+  }
+} */
