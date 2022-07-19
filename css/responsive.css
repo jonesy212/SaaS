@@ -10,6 +10,7 @@
     /***centered sections**/
     .hubspot-section .company-info,
     header,
+    .why-front-list,
     footer{
       width: 80%;
       margin: 0 auto;
@@ -250,7 +251,7 @@
   }
 
   .company-and-features {
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
   }
 }
 
