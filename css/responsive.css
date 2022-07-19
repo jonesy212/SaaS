@@ -6,6 +6,15 @@
 } */
 
 @media only screen and (min-width: 768px){  
+
+    /***centered sections**/
+    .hubspot-section .company-info,
+    header,
+    footer{
+      width: 80%;
+      margin: 0 auto;
+    }
+  
   .header-background-overlay{
       margin-top: -5rem;
   }
@@ -14,6 +23,13 @@
     display: flex;
     margin-top: .5rem;
     justify-content: space-around;
+  }
+
+  .container.inner{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
 
   .logo-icon{
@@ -108,33 +124,76 @@
     margin: 1rem 0 1.2rem
 }
   .top-hr-line{ 
-    border:none;
-    height: 1px;
     margin:2rem 0 1rem;
-    background-color:rgb(225, 224, 224);
+    background-color: rgb(242 242 242);
+    width: 105%;
+    position: relative;
+    right: 17px;
+    /* box-shadow: 0 10px 18px -16px  #717C8B inset;  */
   }
+
+  .why-front .subtext{
+    padding: 0rem 5rem;
+  }
+
+
+  .company-text{
+    font-size: 1.6rem;
+    margin-bottom:2rem
+  }
+
+  .logo{ 
+    width: 7rem
+  }
+
+  .trusted-logos{
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .weebly, .spotify{
+    display:block;
+  }
+  
+  .logo.slack,.logo.uber{
+    display:none
+  }
+
   
   .cards{
     margin-bottom: 10px
   }
 
   .why-front-section{
-    width: 83%;
-    margin: 0 auto;
-  }
-
-  /**All Areas Centered**/
-
-  .benefit-section, 
-  .list-items,
-  .company-info, .trusted-section{
     width: 80%;
     margin: 0 auto;
+    padding-left: 4rem;
   }
 
+  .image-and-play-btn>img {
+    width: 80%;
+  }
+  
+  .hire-us-form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px
+  }
+
+  .hire-us-form label{
+    display: none
+  }
   .hire-us-content{
     width: 100%;
     min-width: 600px; 
+  }
+  form .getting-started-btn,
+  textarea, .privacy-policy
+  {
+    grid-column: 1/3
+  }
+  .check-content{
+    font-size: .9rem;
   }
 
   .woman-and-dots {
@@ -161,21 +220,24 @@
     display:none
   }
 
-  .trusted-logos{
-    flex-direction: row-reverse;
+  .price-heading{ 
+    padding: 5rem 0 0.5rem;
   }
-  
-  .logo.slack,.logo.uber{
-    display:none
-  }
-
 
   .inner-price-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(273px,1fr));
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto
   }
 
+  hr{
+    margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background-color: rgb(211, 209, 209);
+  }
   
   .price-info.card{
     grid-column: 1/3;
@@ -183,24 +245,14 @@
     padding: 30px;
   }
 
-  .price,
-  .price-heading,
-  .subtext{
-    font-size: 300%;
-  }
-  .price-text{ 
-    font-size: 128%;
-  }
-
   .inner-price-container .point-1 {
     padding-top: 0;
+  }
+
+  .company-and-features {
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+  }
 }
-
-
-}
-
-
-
 
 
 

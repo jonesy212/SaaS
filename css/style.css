@@ -290,7 +290,7 @@
   .bulletpoint-subtext {
     margin-right: 2.5rem;
     font-size: 1.2em;
-    margin-bottom:1.3rem;
+    margin-bottom: 0.3rem;
     color: #717C8B;
   }
   
@@ -382,7 +382,9 @@
   
   .item-title{
     font-size:1.2rem;
-    font-weight: 700
+    font-weight: 700;
+    width: 14rem;
+    text-align: left;
   }
   
   .image-and-play-btn{
@@ -409,7 +411,8 @@
     padding: 0}
   
   .woman-and-dots .dots{
-    width: 173px;
+    width: 170px;
+}
   }
   
   .woman-and-dots{
@@ -463,7 +466,7 @@
     text-transform: uppercase;
     font-weight: 700;
     color: #717C8B;
-    margin: 2rem;
+    margin: 3rem;
     letter-spacing: 5;
   }
   
@@ -544,10 +547,11 @@
     padding: 2rem 2rem 0;
     margin-top: 5rem;
   }
+  
 
   textarea{
-    width: 14.3rem;
-    height: 6rem
+    width: 100%;
+    color: #717C8B; 
   }
 
   .people-images{
@@ -623,14 +627,19 @@
   .hire-us-form{
     padding: 1.3rem;
     text-align:left;
-    border-radius: 0.5rem;
     background-color: white;
   }
   
   .hire-us-text{
+    padding: 1rem;
+    text-align: left;
     font-weight: 600;
-    font-size: 1.4em;
-  }
+    font-size: 1.4em; 
+    grid-column: 1/4;
+    margin-bottom: 0;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
   
   .comments{
     color: #99A4AE;
@@ -650,17 +659,13 @@
     color: rgb(52 54 54 / 80%);
   }
   
-  .personal-info,
+  .personal-info, 
   select{
     width: 100%;
-    height: 2.4rem;
+    height: 3rem;
     border-radius: 0.4rem;
     margin-bottom: 1.2rem;
     border: 1px gray solid
-  }
-  
-  #firstName{
-    margin-top: 1.4em
   }
   
   form .getting-started-btn{
@@ -708,6 +713,7 @@
     padding-top: 0.5rem;
     font-size: 1rem;
     color:#717C8B;
+    width: 9rem;
   }
   
   .list-item{
@@ -740,6 +746,7 @@
   .privacy-item a{
     color: #74849B;
     margin: 0 .5rem;
+    font-size: 1rem;
   }
   
   .privacy-item a:first-child{
@@ -748,7 +755,7 @@
   
   .divider{
     color: #74849B;
-    padding: 0 10px;
+    padding: 0 15px;
   }
   
   .resource.list-item, .phone.list-item{
@@ -764,7 +771,8 @@
     justify-content: center;
     align-items: center;
     float: right;
-    margin-bottom: .8rem;
+    align-self: end;
+    margin-bottom: 1rem;
   }
   
   .copyright{
@@ -786,7 +794,7 @@
     display: flex;
     border-radius: 0.3rem;
     align-content: center;
-    padding: 0.1rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     margin-right: 1rem;
   }
   
@@ -801,10 +809,18 @@
   
   select.dropdown, #country{
     margin:0;
-    width: 9.8rem;
     border: none;
     background-color: var(--contrast);
     color: #74849B
+  }
+
+  select.dropdown{
+    width: 9.8rem;
+  }
+
+  #country{
+    width:8.8rem;
+    height: 2rem;
   }
   
   .fa-brands{
