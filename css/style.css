@@ -1,6 +1,5 @@
 
-.hamburger-wrap 
-.hamburger>div {
+.hamburger-wrap {
   display: none
 }
 
@@ -17,24 +16,38 @@ header{
   width: 80%
 }
 
+.header-top{
+  margin: 2rem 2rem;
+}
+
 .demo-content ul{
   padding: 0 2rem;
   justify-content: space-between;
-  font-size: .9rem;
+  font-size: .8rem;
 }
-.demo-content ul a{
+
+.demo-content  li:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+}
+
+.demo-content ul a,
+.nav-links a{
   color: gray
+}
+.nav-links{
+  justify-content: right;
+}
+.nav-link{
+  padding: 0 1rem;
+}
+.nav-links a{
+  font-size: 1rem
 }
 
 .fa-chevron-left,
 .fa-chevron-down{
   font-size: 10px;
-}
-
-.demo-content  li:nth-child(2){
-  display: flex;
-  padding: 0 2rem;
-  justify-content: space-between;
 }
 
 .buy-now-btn{
@@ -43,12 +56,6 @@ header{
   font-size: smaller;
 }
 
-
-.nav-links{
-  justify-content: right;
-
-}
-
-.nav-link{
-  padding: 0 2rem;
+.project-logo{
+  margin: 0
 }
