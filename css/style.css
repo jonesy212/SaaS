@@ -45,3 +45,29 @@ header{
 .top-nav li:first-child{
   padding: 0 2rem;
 }
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content {
+  padding-right: 0;
+}
+.card-content div> span {
+  text-align: justify;
+}
+
+.card-subtext{
+  margin-right: 0;
+}
+
+.card-content .card-image{
+  width: 4rem;
+  padding-top: 2rem;
+}
+.card:last-child {
+margin: 1rem 1rem 1.2rem;
+}

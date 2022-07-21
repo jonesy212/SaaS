@@ -286,12 +286,11 @@
  
   /***CARDS***/
   .card{
-    border: 1px solid transparent;
+    border: 1px solid ;
     padding: 0 1.5rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 10px 35px 0px rgb(233 231 233);
     margin:  1rem 0 1.2rem;
-    border-top: none;
   }
   
   
@@ -1253,7 +1252,64 @@
   .br-2{
     display: none
   }
+
+  .sub-text{
+    margin-bottom: 4rem;
+  }
+
+  .cards{
+    display: flex;
+    border-radius: 0.5rem;
+    color: #EFF3F6;
+  }
+  
+  .cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 1.2rem;
+    margin-right: 5px;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+    color: #EFF3F6;
+    box-shadow: 0 10px 2px 0px rgb(233 231 233);
+    margin: 5px 12px;
+    background-color: white;
+    border-radius: 0 0 .5rem .5rem;
+  }
+  .card-content .card-image{
+    padding-top: 1rem;
 }
+
+  .card-subtext{
+    margin-right: 0;
+    font-size: 1em
+  }
+
+  .outter-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px transparent;
+    border-radius: 1rem ;
+    padding: 0 15px;
+
+    background-color: #f4f4f4;
+  }
+
+  .card:last-child {
+    margin: 0rem 0 1.2rem;
+  }
+  .cards>div:first-child {
+    box-shadow:none
+  }
+
+  .benefit-heading{
+    margin-top: 10rem;
+  }
+}
+
 
 
 
