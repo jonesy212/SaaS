@@ -1,4 +1,5 @@
 
+
 .hamburger-wrap 
 .hamburger>div {
   display: none
@@ -17,12 +18,12 @@ header{
   width: 80%
 }
 
-.demo-content ul{
+.top-nav-container ul{
   padding: 0 2rem;
   justify-content: space-between;
   font-size: .9rem;
 }
-.demo-content ul a{
+.top-nav-container ul a{
   color: gray
 }
 
@@ -31,24 +32,16 @@ header{
   font-size: 10px;
 }
 
-.demo-content  li:nth-child(2){
-  display: flex;
-  padding: 0 2rem;
-  justify-content: space-between;
-}
-
 .buy-now-btn{
   width: 5.5rem;
   height: 2.5rem;
   font-size: smaller;
 }
 
-
 .nav-links{
   justify-content: right;
-
 }
 
-.nav-link{
+.top-nav li:first-child{
   padding: 0 2rem;
 }
