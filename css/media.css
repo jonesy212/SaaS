@@ -891,7 +891,7 @@
 @media screen and (min-width: 768px) {  
 
     /***centered sections**/
-    .hubspot-section .company-info,
+    .hubspot-section,
     header,
     .why-front-list,
     footer{
@@ -922,7 +922,10 @@
     height: 56px;
     position: relative;
     /* background-color: beige; */
-    
+  }
+
+  .br-1{
+    display: none;
   }
 
   .hamburger-wrap .hamburger {
@@ -945,10 +948,8 @@
     height: 5.5rem;
     align-items: normal;
     padding: 1.5rem;
-    grid-row: 2;
-    grid-column: 2;
-  }
 
+  }
   .logo-icons{
     display: grid;
     justify-content: end;
@@ -956,10 +957,10 @@
     grid-template-columns: 1fr 2fr 3fr;
     align-items: start;
     justify-items: center;
-    width: 50%;
+    width: 80%;
     margin: 3rem auto;
+    padding-bottom: 32px;
   }
-
   .google-icon{
     grid-row: 1;
     grid-column: 1;
@@ -974,9 +975,10 @@
     grid-column: 1;
     grid-row: 4;
   }
-  .altassian-icon{
+  .atlassian-icon{
     grid-row: 2;
     grid-column: 2;
+    justify-self:flex-end;
   }
   .weave-icon{
     grid-row: 4;
@@ -987,16 +989,17 @@
     grid-row:1;
     grid-column: 3;
   }
-
   .google-icon, .asana-icon{
     position:relative
   }
-
   .google-icon{
     top: 35px;
   }
   .asana-icon{
     top: 25px;
+  }
+  .google-a-icon{
+    display:none
   }
 
   .card:last-child {
@@ -1077,22 +1080,22 @@
 
   .woman-and-dots {
     display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: 314px;
+    grid-template-columns: repeat(38, 1fr);
+    grid-template-rows: 270px;
+    width: 116%;
+    margin: 8px -54px;
   }
-
-  .dots{
-    grid-column: 2/11;
-    grid-row: 2/3;
+  .woman{
+    grid-column: 3/29;
   }
-
   .woman-and-dots .dots {
-    width: 340px;
-    grid-row: 3/4;
+    width: 322px;
+    grid-row: 4/5;
+    grid-column: 1/15;
   }
 
   .woman-and-dots img:first-child {
-      grid-column: 4/28;
+    grid-column: 4/37;
   }
 
   br.thank-you{
@@ -1100,13 +1103,13 @@
   }
 
   .price-heading{ 
-    padding: 5rem 0 0.5rem;
+    padding: 4rem 0 0.5rem;
   }
 
   .inner-price-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(273px,1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(375px,1fr));
+
     width: 80%;
     margin: 0 auto
   }
@@ -1120,17 +1123,30 @@
   
   .price-info.card{
     grid-column: 1/3;
+    border: transparent;
     box-shadow: 0 54px 51px 0px rgb(233 231 233);
     padding: 30px;
+    
   }
-
   .inner-price-container .point-1 {
     padding-top: 0;
+  }
+  .bulletpoint-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(216px,1fr));
+    grid-gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bulletpoint-subtext{
+    margin-right: 0
   }
 
   .company-and-features {
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
   }
+
+
 }
 
 
@@ -1308,6 +1324,145 @@
   .benefit-heading{
     margin-top: 10rem;
   }
+
+  .why-front-section{
+    width: 100% 
+  }
+  .why-front-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+    margin: 0 auto;
+    width: 80%;
+    text-align: -webkit-center;
+  }
+  .why-front-list .list-items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .item{
+    text-align: center;
+  }
+  .item-title {
+    font-size: .8rem;
+    width: 10rem;
+    margin:0;
+  }
+  .circle {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .separator-div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    align-content: center;
+    background-color: white;
+  }
+  .separator{  
+    position: relative;
+    /* right: 33px; */
+    bottom: 7px;  
+    margin: 0;
+    width: 9rem;
+    height: 0.2rem;
+  }
+  .center.separator{
+    align-self: center;
+    text-align: -webkit-center;
+  }
+  .left.separator{
+    margin-right: -73px;
+  }
+  .right.separator{
+    margin-left: -73px;
+  
+  }
+
+  .center{
+    position: relative;
+    top: 45px;
+  }
+
+  .last{
+    display:none;
+  }
+
+
+  .left-items .list-items{
+    position: relative;
+    right: -33px;
+  }
+
+
+  .right-items .list-items{
+    position: relative;
+    left: 33px;
+  }
+  .right-items .item-content{
+    position: relative;
+    right: 145px;
+  }
+  
+
+
+
+
+  .top-hr-line {
+    margin-bottom: 2rem
+  }
+
+  .item-content{
+    display: grid;
+    justify-items: center;
+    text-align-last: center;
+  }
+
+
+/**HIRE US**/
+.hire-us-container{
+  display: flex;
+}
+
+/**FOOTER**/
+  .top-footer,
+  .company-and-features{
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+  .company-info{
+    width:15rem
+  }
+
+  .hubspot-section, header, footer {
+    width: 100%;
+  }
+
+  .inner-price-container{
+    grid-template-columns: repeat(auto-fit, minmax(375px,1fr));
+  }
+
+  .hire-us-form {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .footer-links {
+    margin: 0 1rem
+  }
+
+  
+  .social-link.dropdown {
+      margin-right: 0
+  }
+  .copyright{
+  text-align: center;
+  }
+  
 }
 
 

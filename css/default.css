@@ -134,6 +134,7 @@ ul{
 
 
 /**GENERAL @media responsive queries**/
+
 @media(min-width: 768px){
   .testimonial-container,
   .price-container,
