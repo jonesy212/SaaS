@@ -15,7 +15,7 @@
   .header-background-overlay {
     margin-top: -13rem;
     background-color: var(--background-1);
-    transform: skewY(-10deg);
+    transform: skewY(-5deg);
     margin-bottom: 4rem;
     background: #EFF3F6;
     border: none
@@ -34,10 +34,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
   
   .container{
-    transform: skewY(10deg);
+    transform: skewY(5deg);
   }
   
   .project-logo{
@@ -46,11 +46,15 @@
     margin: 5rem 0 0px 0rem;
   }
   
-  .hamburger-wrap{    
+  button.hamburger-wrap{    
     display: block;
-    top: 4.3em;
+    top: 1.5em;
     left: 0;
     z-index: 1;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    position:relative;
   }
 
   .buy-now-btn{
@@ -66,30 +70,31 @@
   }
   
   .hamburger-wrap .toggle{
-    top: 60px;
     opacity: 0;
     width: 50px;
-    bottom: 58px;
-    height: 56px;
+    height: 50px;
     cursor: pointer;
     position: relative;
+    z-index: 1;
   }
   
   .hamburger-wrap .hamburger {
     width: 54px;
-    height: 71px;
+    height: 51px;
     padding: 1rem;
       /* background: var(--primary-color); */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
+    position: relative;
+    bottom: 57px;
   }
   
   /**hamburger line**/
   .hamburger-wrap .hamburger > div{
     position: relative;
-    bottom: 2px;
+    bottom: -6px;
     width: 100%;
     height: 4px;
     background-color: #6B7686;
@@ -146,7 +151,7 @@
     font-size: 2.15rem;
     color: black;
   }
-  .break-1{
+  .br-1{
     display: none
   }
   .header-text-box .subtext{
@@ -286,7 +291,7 @@
  
   /***CARDS***/
   .card{
-    border: 1px solid ;
+    border: 1px transparent;
     padding: 0 1.5rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 10px 35px 0px rgb(233 231 233);
@@ -377,7 +382,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    padding: 2rem 0;
+
   }
   
   .circle{
@@ -431,7 +436,8 @@
   
   .image-and-play-btn>img{
     border-radius: 0.3rem;
-    position: relative
+    position: relative;
+    padding-top: 2rem
   }
   
   .play-circle{
@@ -449,7 +455,7 @@
     padding: 0}
   
   .woman-and-dots .dots{
-    width: 170px;
+    width: 250px;
   }
   
   .woman-and-dots{
@@ -459,7 +465,6 @@
     margin-top: 4rem;
 
   }
-  
   
   .woman-and-dots img:first-child{
     grid-column: 1/13;
@@ -514,7 +519,8 @@
   }
   .logo{ width: 6rem;}
   
-  .hr-line{
+  .hr-line, 
+  .hr-line-bottom{
     background-color: #EAEDF5;
     border:none;
     height: 1px
@@ -537,7 +543,6 @@
     padding-bottom: 3rem;
     color: #717C8B;
   }
-  
   
   .price,
   .price-text,
@@ -577,6 +582,7 @@
     background-image: url("/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg");
     border-radius: .5rem;
     background-size:cover;
+    margin: 1rem
   }
   
   .hire-us-content{
@@ -584,7 +590,6 @@
     margin-top: 5rem;
   }
   
-
   textarea{
     width: 100%;
     color: #717C8B; 
@@ -667,16 +672,20 @@
   }
   
   .hire-us-text{
-    padding: 1rem;
     text-align: left;
     font-weight: 600;
     font-size: 1.4em; 
     grid-column: 1/4;
     margin-bottom: 0;
-    background-color: white;
     border-radius: 0.5rem 0.5rem 0 0;
+
   }
-  
+  .paragraph-color {
+    padding: 0 1rem;
+    background-color: white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
   .comments{
     color: #99A4AE;
   }
@@ -734,9 +743,10 @@
   
   .company-and-features{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(175px, 1fr));
     justify-items: start;
     margin-top: 3rem;
+    padding:1rem
   }
   
   .footer-title{
@@ -770,6 +780,10 @@
    margin-top: 0.2rem;
    padding: 0.2rem 0.3rem;
    font-weight: 700;
+  }
+
+  footer,.copyright{
+    padding: 1rem
   }
   
   .footer-policy{
@@ -830,7 +844,7 @@
     display: flex;
     border-radius: 0.3rem;
     align-content: center;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.7rem;
     margin-right: 1rem;
   }
   
@@ -917,11 +931,11 @@
     transform: skew(0deg, 0deg);
   }
 
-  .hamburger-wrap {
+  button.hamburger-wrap {
     top: -30px;
     height: 56px;
     position: relative;
-    /* background-color: beige; */
+    background-color: transparent;
   }
 
   .br-1{
@@ -959,7 +973,7 @@
     justify-items: center;
     width: 80%;
     margin: 3rem auto;
-    padding-bottom: 32px;
+
   }
   .google-icon{
     grid-row: 1;
@@ -1024,6 +1038,9 @@
     margin-bottom:2rem
   }
 
+  .price-heading{
+    font-size: 2.5rem;
+  }
   .logo{ 
     width: 7rem
   }
@@ -1040,7 +1057,21 @@
   .logo.slack,.logo.uber{
     display:none
   }
-
+  .logo:nth-of-type(1){
+    order: 2
+  }
+  .logo:nth-of-type(2){
+    order: 1
+  }
+  .logo:nth-of-type(3){
+    order: 2
+  }
+  .logo:nth-of-type(4){
+    order: 5
+  }
+  .logo:nth-of-type(5){
+    order: 4
+  }
   
   .cards{
     margin-bottom: 10px
@@ -1133,7 +1164,7 @@
   }
   .bulletpoint-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(216px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 30px;
     width: 100%;
     margin: 0 auto;
@@ -1179,18 +1210,19 @@
 
   .header-background-overlay {
     margin-top: -10rem;
-    background: linear-gradient(-61deg, transparent 38em , #F7FBFA 1em ), 
+    background: linear-gradient(-64deg, transparent 38em , #F7FBFA 1em ),  
     linear-gradient(to top, #EFF3F6 80%,transparent 5em ,#EFF3F6 80%);
   }
 
   .project-logo{
     display: flex;
-    margin: 0;
+    margin: 2rem 0;
   }
 
   .navbar{
     width: 86%;
   }
+
   .nav-links,
   .top-nav-container li:first-child,
   .top-nav-container ul
@@ -1203,6 +1235,7 @@
   }
 
   .bottom-nav-link-container{
+    height: 4rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -1234,6 +1267,7 @@
     padding-left: 81px;
   }
   .google-a-icon{
+    display: block;
     grid-row:5;
     grid-column: 2;
     width: 5rem;
@@ -1251,11 +1285,9 @@
     top: 28px;
     justify-self: end;
   }
-
   .altassian-icon{
     justify-self: end;
   }
-
 
   .large-container{
     display: flex;
@@ -1265,12 +1297,48 @@
     margin-top: 7rem;
   }
 
+
+
   .br-2{
     display: none
   }
 
-  .sub-text{
+  .subtext{
     margin-bottom: 4rem;
+  }
+
+  .logos{
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .logo .uber,
+  .logo .slack{
+    display:flex;
+  }
+
+  .trusted-logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-gap: 17px;
+    align-items: center;
+  }
+
+  .logos.two{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+  }
+
+  .logo.two{
+    padding:1rem;
+    display:flex;
+    width:20rem
+  }
+
+  .logos .weebly{
+    grid-column:1;
+    grid-row:2
   }
 
   .cards{
@@ -1310,16 +1378,10 @@
     border: 1px transparent;
     border-radius: 1rem ;
     padding: 0 15px;
-
     background-color: #f4f4f4;
   }
 
-  .card:last-child {
-    margin: 0rem 0 1.2rem;
-  }
-  .cards>div:first-child {
-    box-shadow:none
-  }
+
 
   .benefit-heading{
     margin-top: 10rem;
@@ -1343,9 +1405,6 @@
     align-items: center;
     justify-content: center;
   }
-  .item{
-    text-align: center;
-  }
   .item-title {
     font-size: .8rem;
     width: 10rem;
@@ -1366,7 +1425,7 @@
   .separator{  
     position: relative;
     /* right: 33px; */
-    bottom: 7px;  
+    bottom: 9px;  
     margin: 0;
     width: 9rem;
     height: 0.2rem;
@@ -1380,12 +1439,12 @@
   }
   .right.separator{
     margin-left: -73px;
-  
+    right: 75px;
   }
 
   .center{
     position: relative;
-    top: 45px;
+    top: 49px;  
   }
 
   .last{
@@ -1395,22 +1454,60 @@
 
   .left-items .list-items{
     position: relative;
+    left: 2rem;
+  }
+  .left-items .list{
+    position: relative;
     right: -33px;
   }
-
-
-  .right-items .list-items{
+  .left-items .item:first-child {
     position: relative;
-    left: 33px;
+    left: 5rem;
+  }
+  .left-items .separator{
+    position: relative;
+    left: 2.4rem;
+  }
+
+  
+  .right-items .list{
+    position: relative;
+    left: 2rem;
   }
   .right-items .item-content{
     position: relative;
-    right: 145px;
+    right: 2rem;
+  }
+  .right-items .separator{
+    right: 4.5rem;
+  }
+  .right-items .item:last-child{
+    position: relative;
+    right: 80px;
   }
   
+  .woman-and-dots{
+    margin-top: 7rem;
+    grid-template-rows: 16rem; 
+  }
 
+  .woman-and-dots .dots {
+    width: 17.3rem;
+    grid-row: 4/5;
+    grid-column: 3/15;
+  }
+  .woman-and-dots img:first-child{
+    grid-column: 6/36
+  }
 
-
+  .hubspot-section{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .hubspot-section .company-box{
+    padding-left: 4rem;
+  }
 
   .top-hr-line {
     margin-bottom: 2rem
@@ -1422,25 +1519,65 @@
     text-align-last: center;
   }
 
+  .bulletpoint-container{
+    display: grid;
+    grid-column: 1/4;
+    margin: 4rem 0; 
+  }
+
 
 /**HIRE US**/
 .hire-us-container{
   display: flex;
+  margin: 0 2rem;
+  padding: 2rem 10rem;
+}
+.hire-us-content{
+  align-self: center;
+}
+.hire-us-text{
+  padding: 1rem;
+}
+
+.form-outline{
+    padding: 1rem;
+    border-radius: 2.5rem
+}
+.outter-form-outline{
+  border: 1px solid #323f5e;;
+  padding: 1.5rem;
+  border-radius: 4rem 4rem;
+  background-color:#20335b77;
+
+  z-index:-100;
+}
+.paragraph-color{
+  padding:0 1rem;
+  background-color:white;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 
 /**FOOTER**/
+  footer{
+    padding-bottom: 0;
+  }
+  .top-footer{
+    padding-top: 3rem;
+  }
   .top-footer,
-  .company-and-features{
+  .company-and-features,
+  .bottom-footer{
     display: flex;
     justify-content: center;
   }
 
  
   .company-info{
-    width:15rem
+    width:18rem
   }
 
-  .hubspot-section, header, footer {
+  .hubspot-section, footer {
     width: 100%;
   }
 
@@ -1450,6 +1587,9 @@
 
   .hire-us-form {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+
   }
   .footer-links {
     margin: 0 1rem
@@ -1459,10 +1599,32 @@
   .social-link.dropdown {
       margin-right: 0
   }
+  
   .copyright{
-  text-align: center;
+    text-align: center;
+    flex-direction: column
+  }
+
+  .bottom-footer{
+    justify-content: space-between;
+  }
+  .bottom-footer,
+  .copyright,
+  .hr-line-bottom{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .form-outline{
+    border-radius: 3rem;
+    background-color:#404f7f48;
   }
   
+  .cookies{
+    width:70%;
+    margin: 1rem auto
+  }
 }
 
 

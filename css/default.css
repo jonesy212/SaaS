@@ -107,7 +107,8 @@ img{
 
 ul{
   display:flex;
-  align-items:center
+  align-items:center;
+  justify-content: space-around;
 }
 
 /***Common default button properties**/
@@ -137,7 +138,7 @@ ul{
 
 @media(min-width: 768px){
   .testimonial-container,
-  .price-container,
+
   .footer-bottom-container{max-width: 720px;}
 }
 

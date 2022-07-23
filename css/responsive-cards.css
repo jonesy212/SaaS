@@ -1,4 +1,54 @@
 /**accommodates mobile responsive**/
+
+.cards{
+  margin-top: 4rem;
+}
+.cards>div:first-child {
+  box-shadow:none
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:last-child {
+  margin: 0rem 0 1.2rem;
+}
+
+.card-content {
+  padding-right: 0;
+}
+.card-content div> span {
+  text-align: justify;
+}
+
+.card-subtext{
+  margin-right: 0;
+  margin-bottom: 2rem;
+}
+
+.card-content .card-image{
+  width: 4rem;
+  padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**minimum of about 320px**********/
 /* @media screen and (min-width: 40em) {
   .cards {
