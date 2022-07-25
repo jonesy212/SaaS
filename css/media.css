@@ -44,7 +44,6 @@
     color: var(--font-color-dark);
 
   }
-
   ul li a:hover{
     padding: 0 0  0 0;
     background-color:rgba(52, 49, 75, 0.036);
@@ -59,7 +58,6 @@
     background: #EFF3F6;
     border: none
   }
-
   header{
     padding: 0 1rem;
     width: 100%;
@@ -90,11 +88,10 @@
     left: 0px;
     z-index: -100;
   }
-
   button.hamburger-wrap{    
     display: block;
     top: 1.2em;
-    left: -21px;
+    left: -4px;
     z-index: 1;
     height: 50px;
     background-color: transparent;
@@ -1234,10 +1231,10 @@
   .outter-price-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px,1fr));
-
     width: 80%;
     margin: 0 auto
   }
+
 
   hr{
     margin: 1rem 0;
@@ -1371,7 +1368,7 @@
 
   .header-background-overlay {
     margin-top: -10rem;
-    background: linear-gradient(-61deg, transparent 39em , #F7FBFA 1em ),  
+    background: linear-gradient(-63deg, transparent 40em , #F7FBFA 1em ),  
     linear-gradient(to top, #EFF3F6 80%,transparent 5em ,#EFF3F6 80%);
   }
 
@@ -1596,6 +1593,12 @@
     height: 3rem;
   }
 
+  .getting-started-container{
+    padding: 2rem;
+    padding-right: 4rem
+
+  }
+
   .separator-div{
     display: flex;
     flex-wrap: nowrap;
@@ -1705,6 +1708,7 @@
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     height: 27rem;
+    width: 32rem
   }
 
 

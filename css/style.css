@@ -47,3 +47,21 @@ header{
 .top-nav li:first-child{
   padding: 0 2rem;
 }
+
+.show{
+  position: relative;
+  transform: translateY(-0);
+  opacity: 1;
+  transition: all 300ms ease-in
+}
+
+.show.active{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition-delay: 100ms;
+}
+
+.top-nav .nav-links .nav-link{
+  margin-right: 1rem
+}

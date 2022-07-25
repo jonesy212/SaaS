@@ -191,7 +191,7 @@
           <div class="card top-fade">
         
           <div class="card-content">
-            <div class="card-image">
+            <div class="card-image ">
               <img src="/saas-project-assets/icons/responsive.svg" alt="responsive icon">
             </div>
             <div class="card-text">
@@ -285,7 +285,6 @@
     </section>
     <hr class="top-hr-line">
 
-   
     <section class="center-alignment">
       <div class="why-front-section">
         
@@ -299,7 +298,7 @@
             </span>
           </a>
         </div>
-        <div class="image-container">
+        <div id="slideImage" class="image-container show active">
           <img src="/saas-project-assets/banners/banner_one.jpg" alt="banner-one-for-people">
         </div>
       </div>
@@ -354,8 +353,7 @@
             </li>
             </ul>
             </div>
-
-            
+        
             <span class="center">
               <div class="separator"></div>
             </span>
@@ -850,31 +848,65 @@
       </div>
     </div>
 
+  
+  </body>
+
+  <script type="text/javascript">
+    const nav = document.getElementById("topNav");
     
-
-</body>  
-
-<script>
-  const nav = document.getElementById("topNav");
+    window.onscroll = function (){
+    if (window.pageYOffset > 250){
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky")
+    }
+  }
   
-  window.onscroll = function (){
-if (window.pageYOffset > 250){
-  nav.classList.add("sticky");
-} else {
-  nav.classList.remove("sticky")
-}
-}
+    const slide = document.getElementById("slideImage")
 
-  const navButton = document.querySelector("button[aria-expanded]");
-  
-  function toggleNav({ target }){
-    console.log('click')
-    const expanded = target.getAttribute("aria-expanded") === 'true' || false;
-    navButton.setAttribute("aria-expanded", !expanded);
-    console.log(expanded);
+    window.onscroll = function (){
+      if (window.pageYOffset < 900){
+        slide.classList.add("active");
+
+    } else {
+      slide.classList.remove("active")
+
+    }
   }
 
-  navButton.addEventListener("click", toggleNav);
+    const navButton = document.querySelector("button[aria-expanded]");
+    
+    function toggleNav({ target }){
+      console.log('click')
+      const expanded = target.getAttribute("aria-expanded") === 'true' || false;
+      navButton.setAttribute("aria-expanded", !expanded);
+      console.log(expanded);
+    }
 
-</script>
+    navButton.addEventListener("click", toggleNav);
+
+
+    
+
+  </script>
+
+  <script>
+    window.addEventListener("scroll", show);
+
+    function show(){
+    const shows = document.querySelectorAll(".show");
+
+    const windowHeight = window.innerHeight;
+    const showTop = shows.getBoundingClientRect().bottom;
+    const showSpot = 200;
+
+    if(showTop < windowHeight - showSpot){
+      shows.classList.add('active');
+    }
+    else{
+      shows.classList.remove('active');
+    }
+  }
+  </script>
+
 </html>
