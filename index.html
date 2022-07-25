@@ -35,7 +35,7 @@
   <div id="pageTop" class="header-background-overlay">
 
       <header>
-        <div class="nav navbar">
+        <div  class="nav navbar">
           <div class="top-nav-container">
             <ul class="nav-links top-nav">
               <li class="nav-link">
@@ -62,15 +62,15 @@
               <img src="/saas-project-assets/project_logo/logo.svg" alt="project logo">
             </div>
 
-            <button class="hamburger-wrap">
-              <input type="checkbox" class="toggle">
-              <div class="hamburger">
-                <div></div>
-              </div>
-            </button>
             
-            <div class="nav-links bottom-nav">
-              <ul class="nav-link-items">
+            <nav  id="topNav"  class="bottom-nav">
+              <button class="hamburger-wrap toggler" type="button" aria-expanded="false" aria-controls="navbarDropdown">
+                <div  class="hamburger">
+                  <div class="toggler"></div>
+                </div>
+              </button>
+              
+              <ul class="nav-links">
                 <li class="nav-link">
                   <a href="">Home</a>
                 </li>
@@ -92,7 +92,7 @@
                 </div>
           
               </ul>
-            </div>
+            </nav>
           </div>
           <div class="header-top">
           
@@ -171,9 +171,9 @@
 
   </div>
   
-  <div class="container inner">
+  <div class="inner-container">
     
-    <section>
+    <section class="section-heading">
       <div class="benefit-heading">
         Key Benefits
       </div>
@@ -199,7 +199,7 @@
               Responsive
               </div>
               <div class="card-subtext">
-                Front is an incredibly beautiful, fully responsive, and mobile-first project on the web.
+              Front is an incredibly beautiful, fully responsive, and mobile-first project on the web.
               </div>
             </div>
           </div>   
@@ -288,14 +288,17 @@
    
     <section class="center-alignment">
       <div class="why-front-section">
-        <div class="why-front-header">
-          Front makes you look at things from a different perspective.
+        
+        <div class="getting-started-container">
+          <div class="why-front-header">
+            Front makes you look at <br class="br-why-front"> things from a different perspective.
+          </div>
+          <a href="" class="getting-started-btn">
+            <span>Get Started  
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </a>
         </div>
-        <a href="" class="getting-started-btn">
-          <span>Get Started  
-            <i class="fa-solid fa-chevron-right"></i>
-          </span>
-        </a>
         <div class="image-container">
           <img src="/saas-project-assets/banners/banner_one.jpg" alt="banner-one-for-people">
         </div>
@@ -304,14 +307,17 @@
 
     <section class="center-alignment">
       <div class="why-front">
-        <div class="benefit-heading">
-          Why Front
-        </div>
-    
-        <div class="subtext">
-          Front is an incredibly beautiful responsive, and mobile-first projects on the web-
-          it is the starting point for creative sites.
-        </div>
+        <section class="section-heading">
+          <div class="benefit-heading">
+            Why Front
+          </div>
+      
+          <div class="subtext">
+            Front is an incredibly beautiful responsive, and mobile-first projects on the web-
+            it is the starting point for creative sites.
+          </div>
+        </section>
+
         <div class="why-front-list">
           
           <div class="left-items">
@@ -460,7 +466,7 @@
                 <img class="spotify" src="/saas-project-assets/company_logos/spotify.svg" alt="spotify logo">
               </li>
               <li class="logo">
-                <img src="/saas-project-assets/company_logos/airbnb.svg" alt="airbnb logo">
+                <img class="airbnb" src="/saas-project-assets/company_logos/airbnb.svg" alt="airbnb logo">
               </li>
             </ul>
           </div>
@@ -471,30 +477,39 @@
           
            <div class=" price-container center-alignment">
             
-            <div class="price-heading">
-              Pricing
+            <div class="section-heading">
+              <div class="price-heading">
+                Pricing
+              </div>
+              <div class="subtext">
+                No additional costs. Pay for what you use.
+              </div>
             </div>
-            <div class="subtext">
-              No additional costs. Pay for what you use.
-            </div>
+
             <div class="price-card-container">
-              <div class="inner-price-container">
-                
-                <div class="price-info card">
-                  <div class="price">$59/ <span>mo</span></div>
-                  <hr class="hr-line">
-                  <div class="price-text">Start your Front business now.  
-                    100% guaranteed money back. No questions asked.
-                  </div>
-                  <a href="" class="getting-started-btn">
-                    <span>Get Started  
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </span>
-                  </a>
-                  <div class="no-credit-required">
-                    No credit card required.
-                  </div>
+              <div class="outter-price-card">
+                <div class="middle-price-container">
+                    <div class="inner-price-container">
+  
+                      <div class="price-info card">
+                        <div class="price">$59/ <span>mo</span></div>
+                        <hr class="card-hr-line">
+                        <div class="price-text">Start your Front business now.  
+                          100% guaranteed money back. No questions asked.
+                        </div>
+                        <a href="" class="getting-started-btn">
+                          <span>Get Started  
+                            <i class="fa-solid fa-chevron-right"></i>
+                          </span>
+                        </a>
+                        <div class="no-credit-required">
+                          No credit card required.
+                        </div>
+                      </div>
+                    </div>
+
                 </div>
+              </div>
 
                 <div class="bulletpoint-container">
                 <div class="bulletpoint-content point-1">
@@ -629,7 +644,7 @@
                 <label id="label-input" for="checkbox"></label>
                 <input type="checkbox" name="checkbox">
               </div>
-              <div class="check-content">
+              <div class="check-box">
                 Yes, I'd like to receive occasional emails from Front.  I have the right to opt out at any time.
                 <a href="">View privacy policy</a>
               </div>
@@ -837,5 +852,29 @@
 
     
 
-</body>
+</body>  
+
+<script>
+  const nav = document.getElementById("topNav");
+  
+  window.onscroll = function (){
+if (window.pageYOffset > 250){
+  nav.classList.add("sticky");
+} else {
+  nav.classList.remove("sticky")
+}
+}
+
+  const navButton = document.querySelector("button[aria-expanded]");
+  
+  function toggleNav({ target }){
+    console.log('click')
+    const expanded = target.getAttribute("aria-expanded") === 'true' || false;
+    navButton.setAttribute("aria-expanded", !expanded);
+    console.log(expanded);
+  }
+
+  navButton.addEventListener("click", toggleNav);
+
+</script>
 </html>

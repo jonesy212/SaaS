@@ -56,7 +56,7 @@ body{
   color: var(--font-color-base);
   margin: 0;
   padding: 0;
-  border: 4px solid green;
+  /* border: 4px solid green; */
 }
 
 
@@ -108,7 +108,6 @@ img{
 ul{
   display:flex;
   align-items:center;
-  justify-content: space-around;
 }
 
 /***Common default button properties**/
@@ -133,20 +132,11 @@ ul{
   color:var(--font-color-link)
 }
 
-
-/**GENERAL @media responsive queries**/
-
-@media(min-width: 768px){
-  .testimonial-container,
-
-  .footer-bottom-container{max-width: 720px;}
-}
-
-@media(min-width: 992px){
-  .footer-top-container, .container {max-width: 968px}
+.inner-container{
+  margin-top: 4rem;
+  width: 90%;
+  margin: 0 auto
 }
 
 
-@media(min-width: 1200px){
-  .container{max-width: 1140px}
-}
+
