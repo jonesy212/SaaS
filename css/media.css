@@ -234,7 +234,7 @@
     padding-right: 5%
   }
   
-  i{padding-right:.5rem}
+  i {padding-right:.2rem}
   
   .play-video-btn span,
   .getting-started-btn,
@@ -373,6 +373,10 @@
     margin: 1rem 0 3.2rem;
   }
   
+  .bulletpoint-content{
+    animation-name: popUp;
+    animation-duration: 5s;
+  }
   .card-content .card-image,
   .bulletpoint-content .bulletpoint-image
    {
@@ -430,7 +434,8 @@
     border-radius: .5rem;
     background-color: #EDF0F7;
     padding-left: 2rem;
-    display:flex
+    display:flex;
+    flex-direction: column;
   }
   
   .why-front-header{
@@ -1362,8 +1367,9 @@
     display:block
   }
 
-  .nav-links{
-    display:flex
+  .nav-links,
+  .ul.resources.list-item{
+    display:flex;
   }
 
   .header-background-overlay {
@@ -1459,8 +1465,10 @@
     display: none
   }
 
-  .subtext{
-  padding-bottom: 0;
+  .why-front .subtext{
+    padding: 0rem 20rem;
+    padding-bottom: 0;
+
   }
 
   .logos{
@@ -1556,6 +1564,9 @@
     padding: 0 15px;
     background-color: #f4f4f4;
   }
+  .outter-card:hover{
+    transform: translateY(-20px);
+  }
 
   .benefit-heading{
     margin-top: 6rem;
@@ -1596,7 +1607,6 @@
   .getting-started-container{
     padding: 2rem;
     padding-right: 4rem
-
   }
 
   .separator-div{
@@ -1608,10 +1618,9 @@
   }
   .separator{  
     position: relative;
-    /* right: 33px; */
     bottom: 9px;  
     margin: 0;
-    width: 9rem;
+    width: 13rem;
     height: 0.2rem;
   }
   .center.separator{
