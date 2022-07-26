@@ -1358,6 +1358,12 @@
   [aria-expanded="false"] ~ ul {
      display: flex;
   }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    width: 100%;
+    position: inherit;
+  }
   
   button.hamburger-wrap {
     display: none
