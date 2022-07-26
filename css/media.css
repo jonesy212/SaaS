@@ -1812,7 +1812,8 @@
 
  
   .company-info{
-    width:18rem
+    width:18rem;
+    margin-top: -0.5rem;
   }
 
    footer {
@@ -1863,6 +1864,7 @@
     width: 85%;
     display: flex;
     margin: 0 auto;
+    align-items: center;
   }
 
   .form-outline{

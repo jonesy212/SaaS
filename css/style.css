@@ -1,6 +1,7 @@
 /* Wasn't able to figure out how to make the cards have the bounce when scrolling*/
 /* Wasn't able to figure out how to add the country logo to the select options */
 
+
 /**Navbar**/
 .hamburger-wrap 
 .hamburger>div {
@@ -59,7 +60,7 @@ header{
   position: relative;
   transform: translateY(0px);
   opacity: 1;
-  transition-delay: 200ms
+  transition-delay: 100ms
 }
 
 .load{
