@@ -1,6 +1,57 @@
 /**accommodates mobile responsive**/
+
+.cards{
+  margin-top: 4rem;
+}
+.cards>div:first-child {
+  box-shadow:none
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 5em
+}
+.card:last-child {
+  margin: 0rem 0 1.2rem;
+}
+
+.card-content {
+  padding-right: 0;
+}
+.card-content div> span {
+  text-align: justify;
+}
+
+.card-subtext{
+  margin-right: 0;
+  margin-bottom: 2rem;
+}
+
+.card-content .card-image{
+  width: 4rem;
+  padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**minimum of about 320px**********/
-@media screen and (min-width: 40em) {
+/* @media screen and (min-width: 40em) {
   .cards {
       display: flex;
       flex-wrap: wrap;
@@ -14,12 +65,12 @@
     justify-content: flex-start;
     flex-direction: column;
     flex: 0 1 calc(50% - 1em);
-  }
-  .card-content{
+  } 
+  /* .card-content{
     padding-right: 1.5rem;
-  }
+  } */
 
-  .card-content div {
+  /* .card-content div {
     text-align: -webkit-auto;
   }
   
@@ -35,12 +86,12 @@
 
   .card-subtext, .bulletpoint-subtext {
     margin-right: 0;
-  } 
+  }  */
 
 
 
-  
-}
+/*   
+} */
 
 
 /**break points

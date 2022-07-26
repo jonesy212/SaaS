@@ -22,87 +22,158 @@
   -->
 
   <!--CUSTOM STYLES-->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/responsive-cards.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
   <title>Document</title>
 
 </head>
 <body>
-  <div id="pageTop" class="header-background-overlay ">
-    <div class="container">
+  <div id="pageTop" class="header-background-overlay">
+
       <header>
-        <div class="logo-menu-container">
-          <div class="header-top">
-            
+        <div  class="nav navbar">
+          <div class="top-nav-container">
+            <ul class="nav-links top-nav">
+              <li class="nav-link">
+                <i class="fa-solid fa-chevron-left"></i>
+                <a href="" class="demo-link">Main Demo</a>
+              </li>
+              
+              <ul class="nav-links">
+                <li class="nav-link">
+                  <a href="" class="demo-link">Demos</a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </li>
+
+                <li class="nav-link">
+                  <a href="" class="demo-link">Docs</a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </li>
+              </ul>
+            </ul>
+          </div>
+
+          <div class="bottom-nav-link-container">
             <div class="project-logo">
               <img src="/saas-project-assets/project_logo/logo.svg" alt="project logo">
             </div>
+
+            
+            <nav  id="topNav"  class="bottom-nav">
+              <button class="hamburger-wrap toggler" type="button" aria-expanded="false" aria-controls="navbarDropdown">
+                <div  class="hamburger">
+                  <div class="toggler"></div>
+                </div>
+              </button>
+              
+              <ul class="nav-links">
+                <li class="nav-link">
+                  <a href="">Home</a>
+                </li>
+                <li class="nav-link">
+                  <a href="">Features</a>
+                </li>
+                <li class="nav-link">
+                  <a href="">Learn</a>
+                </li>
+                <li class="nav-link">
+                  <a href="">Pricing</a>
+                </li>
+                <li class="nav-link">
+                  <a href="">Hire Us</a>
+                </li>
+  
+                <div class="buy-now-btn">      
+                  <span>Buy Now</span>
+                </div>
+          
+              </ul>
+            </nav>
+          </div>
+          <div class="header-top">
+          
             <!-- <h1>Page Title</h1> -->
-            <div class="hamburger-wrap">
-              <input type="checkbox" class="toggle">
-              <div class="hamburger">
-                <div></div>
-              </div>
-            </div>
+
           </div>
         </div>
 
-          <div class="header-text-box">
-            <h1>Empowering teams
-            <br> with the freedom</h1>
-            <div class="subtext">Own unlimited power of the web development.</div>
-          </div>
-          <div class="play-and-learn">
-            <div class="play-video-btn">
-              
-              <span><i class="fa-solid fa-circle-play"></i> Play Video</span>
-            </div>
-            <span><a href="#">Learn More</a> <i class="fa-solid fa-chevron-right"></i></span>
-          </div>
-          
+          <div class="large-container">
 
-          <ul class="logo-icons">
+            <div class="ad-text-content">
+              <div class="header-text-box">
+                <h1>Empowering
+                  <br class="br-1"> teams
+                <br class="br-2"> with the freedom</h1>
+                <div class="subtext">Own unlimited power of the web <br class="dev-br"> development.</div>
+              </div>
+              <div class="play-and-learn">
+                <div class="play-video-btn">
+                  
+                  <span><i class="fa-solid fa-circle-play"></i> Play Video</span>
+                </div>
+                <span><a href="#">Learn More</a> <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>            
 
-            <div class="logo-icon paypal-icon">
-              <li class="circle-icon-3 ">
-              <img src="/saas-project-assets/logo_icons/paypal.jpg" alt="paypal icon">
-            </li>
+            <div class="icon-container">
+              <ul class="logo-icons">
+
+                <div class="load active logo-animation 1 logo-icon paypal-icon">
+                  <li class="circle-icon-1 ">
+                  <img src="/saas-project-assets/logo_icons/paypal.jpg" alt="paypal icon">
+                </li>
+                </div>
+
+                <div class="load active logo-animation 2 logo-icon google-a-icon">
+                  <li class="circle-icon-1 ">
+                    <img src="/saas-project-assets/logo_icons/google-A.png" alt="google a icon">
+                </li>
+                </div>
+                
+                <div class="load active logo-animation 3 logo-icon google-icon">
+                  <li class="circle-icon-2">
+                  <img src="/saas-project-assets/logo_icons/google.png" alt="google icon">
+                </li>
+                </div>
+
+                <div class="load active logo-animation 4 logo-icon atlassian-icon">
+                  <li class="circle-icon-3">
+                  <img src="/saas-project-assets/logo_icons/atlassian.png" alt="atlassian logo">
+                </li>
+                </div>
+        
+                <div class="load active logo-animation 5 logo-icon weave-icon">
+                  <li class="circle-icon-4">
+                  <img src="/saas-project-assets/logo_icons/weave.png" alt="weave icon">
+                </li>
+                </div>
+                
+                <div class="load active logo-animation 6 logo-icon asana-icon">
+                  <li class="circle-icon-5">
+                    <img src="/saas-project-assets/logo_icons/asana.png" alt="asana icon">
+                  </li>
+                </div>
+
+                <div class="load active logo-animation 7 logo-icon calendar-icon">
+                  <li class="circle-icon-5">
+                    <img src="/saas-project-assets/logo_icons/calendar.png" alt="calendar icon">
+                  </li>
+                </div>
+                
+              </ul>
             </div>
-            
-            <div class="logo-icon google-icon">
-              <li class="circle-icon-">
-              <img src="/saas-project-assets/logo_icons/google.png" alt="google icon">
-            </li>
-            </div>
-            
-            <div class="logo-icon atlassian-icon">
-              <li class="circle-icon-1 ">
-              <img src="/saas-project-assets/logo_icons/atlassian.png" alt="atlassian logo">
-            </li>
-            </div>
-    
-            <div class="logo-icon weave-icon">
-              <li class="circle-icon-4">
-              <img src="/saas-project-assets/logo_icons/weave.png" alt=" weave icon">
-            </li>
-            </div>
-            
-            <div class="logo-icon asana-icon">
-              <li class="circle-icon-2 ">
-                <img src="/saas-project-assets/logo_icons/asana.png" alt=" asana icon">
-              </li>
-            </div>
-          </ul>
+          </div>
       </header>
-    </div>
+
   </div>
   
-  <div class="container inner">
+  <div class="inner-container">
     
-    <section>
+    <section class="section-heading">
       <div class="benefit-heading">
         Key Benefits
       </div>
@@ -114,10 +185,13 @@
     <section>
 
       <div class="cards">
-        <div class="card top-fade">
-
+        
+        <div class="outter-card">
+          
+          <div class="card top-fade">
+        
           <div class="card-content">
-            <div class="card-image">
+            <div class="card-image ">
               <img src="/saas-project-assets/icons/responsive.svg" alt="responsive icon">
             </div>
             <div class="card-text">
@@ -125,15 +199,19 @@
               Responsive
               </div>
               <div class="card-subtext">
-                Front is an incredibly beautiful, fully responsive, and mobile-first project on the web.
+              Front is an incredibly beautiful, fully responsive, and mobile-first project on the web.
               </div>
             </div>
-          </div>
+          </div>   
+          
           <div>
             <span><a href="#">Learn More</a> <i class="fa-solid fa-chevron-right"></i></span>
           </div>
+          </div>
         </div>
-         
+       
+        <div class="outter-card">
+      
         <div class="card top-fade">
 
           <div class="card-content">
@@ -153,7 +231,11 @@
             <span><a href="#">Learn More</a> <i class="fa-solid fa-chevron-right"></i></span>
           </div>
         </div>
+            
+        </div>
 
+        <div class="outter-card">
+            
         <div class="card">
 
           <div class="card-content">
@@ -174,7 +256,10 @@
             <span><a href="#">Learn More</a> <i class="fa-solid fa-chevron-right"></i></span>
           </div>
         </div>
-
+        
+      </div>
+      
+      <div class="outter-card">
         <div class="card">
 
           <div class="card-content">
@@ -193,41 +278,48 @@
           <div>
             <span><a href="#">Learn More</a> <i class="fa-solid fa-chevron-right"></i></span>
           </div>
+        </div>            
         </div>
-
       </div>
+
     </section>
     <hr class="top-hr-line">
 
-   
-    <section class=" ">
+    <section class="center-alignment">
       <div class="why-front-section">
-        <div class="why-front-header">
-          Front makes you look at things from a different perspective.
+        
+        <div class="getting-started-container">
+          <div class="why-front-header">
+            Front makes you look at <br class="br-why-front"> things from a different perspective.
+          </div>
+          <a href="" class="getting-started-btn">
+            <span>Get Started  
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </a>
         </div>
-        <a href="" class="getting-started-btn">
-          <span>Get Started  
-            <i class="fa-solid fa-chevron-right"></i>
-          </span>
-        </a>
-        <div class="image-container">
+        <div id="slideImage" class="image-container show active">
           <img src="/saas-project-assets/banners/banner_one.jpg" alt="banner-one-for-people">
         </div>
       </div>
     </section>
 
-    <div>
-      <section class="why-front">
-        <div class="benefit-heading">
-          Why Front
-        </div>
-    
-        <div class="subtext">
-          Front is an incredibly beautiful responsive, and mobile-first projects on the web-
-          it is the starting point for creative sites.
-        </div>
-        <div class="why-front-list">
+    <section class="center-alignment">
+      <div class="why-front">
+        <section class="section-heading">
+          <div class="benefit-heading">
+            Why Front
+          </div>
+      
+          <div class="subtext">
+            Front is an incredibly beautiful responsive, and mobile-first projects on the web-
+            it is the starting point for creative sites.
+          </div>
+        </section>
 
+        <div class="why-front-list">
+          
+          <div class="left-items">
           <ul class="list-items">
             
             <li class="item">
@@ -243,7 +335,10 @@
               </div>
             </li>
 
-            <div ><div class="separator"></div></div>
+            <div>
+              <div class="separator"></div>
+            </div>
+
             <li class="item">
               <div class="item-content">
                 <div class="circle">
@@ -256,8 +351,16 @@
                 </div>
               </div>
             </li>
+            </ul>
+            </div>
+        
+            <span class="center">
+              <div class="separator slide-hr"></div>
+            </span>
+            
+            <div class="right-items ">
+            <ul class="list-items">
 
-            <div ><div class="separator"></div></div>
             <li class="item">
               <div class="item-content">
                 <div class="circle">
@@ -271,7 +374,10 @@
               </div>
             </li>
 
-            <div ><div class="separator"></div></div>
+            <span>
+              <div class="separator"></div>
+            </span>
+
             <li class="item">
               <div class="item-content">
                 <div class="circle">
@@ -284,12 +390,16 @@
                 </div>
               </div>
             </li>
+            </div>
 
-            <div ><div class="separator"></div></div>
-
+            <span  class="last">
+              <div class="separator"></div>
+            </span>
+            
           </ul>
 
         </div>
+
         <div class="image-container">
           <div class="image-and-play-btn">
             <img src="/saas-project-assets/banners/banner_two.jpg" alt="">
@@ -308,12 +418,12 @@
         <section class="hubspot-section">
           <div class="woman-and-dots">
      
-            <img src="/saas-project-assets/people/woman_three.jpg" alt="woman-three">
+            <img class="woman" src="/saas-project-assets/people/woman_three.jpg" alt="woman-three">
             <img class="dots" src="/saas-project-assets/icons/dots.svg" alt="">
  
           </div>
           
-          <div>
+          <div class="company-box">
             <div class="company-logo">
               <img src="/saas-project-assets/company_logos/hubspot.svg" alt="hubspot">
             </div>
@@ -332,59 +442,75 @@
             </div> 
           </div>
 
+
         </section>
-
-
-
-
 
         <div class="trusted-section">
           <div class="trusted-title">
             Trusted By The World's Best
           </div>
           <div class="trusted-logos">
-            <div class="logo">
-              <img class="logo uber" src="/saas-project-assets/company_logos/uber.svg" alt="uber logo">
-              <img class="logo weebly" src="/saas-project-assets/company_logos/weebly.svg" alt="weebly logo">
-            </div>
-            <div class="logo">
-              <img class="logo slack" src="/saas-project-assets/company_logos/slack.svg" alt="slack logo">
-              <img class="logo spotify" src="/saas-project-assets/company_logos/spotify.svg" alt="spotify logo">
-
-            </div>
-            <div class="logo airbnb">
-              <img src="/saas-project-assets/company_logos/airbnb.svg" alt="airbnb logo">
-            </div>
+            <ul class="logos">
+              <li class="logo">
+                <img class="uber" src="/saas-project-assets/company_logos/uber.svg" alt="uber logo">
+              </li>
+              <li class="logo">
+                <img class="weebly" src="/saas-project-assets/company_logos/weebly.svg" alt="weebly logo">
+              </li>
+              <li class="logo">              
+                <img class="slack" src="/saas-project-assets/company_logos/slack.svg" alt="slack logo">
+              </li>
+              <li class="logo">
+                <img class="spotify" src="/saas-project-assets/company_logos/spotify.svg" alt="spotify logo">
+              </li>
+              <li class="logo">
+                <img class="airbnb" src="/saas-project-assets/company_logos/airbnb.svg" alt="airbnb logo">
+              </li>
+            </ul>
           </div>
-          <hr class="hr-line">
-          <div class=" price-container">
-            
-            <div class="price-heading">
-              Pricing
-            </div>
-            <div class="subtext">
-              No additional costs. Pay for what you use.
-            </div>
-            <div class="price-card-container">
-              <div class="inner-price-container">
-                
-                <div class="price-info card">
-                  <div class="price">$59/ <span>mo</span></div>
-                  <hr class="hr-line">
-                  <div class="price-text">Start your Front business now.  
-                    100% guaranteed money back. No questions asked.
-                  </div>
-                  <a href="" class="getting-started-btn">
-                    <span>Get Started  
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </span>
-                  </a>
-                  <div class="no-credit-required">
-                    No credit card required.
-                  </div>
-                </div>
+        </div>
 
-                <div class="bulletpoint-content point-1">
+          <hr class="hr-line">
+           </div>
+          
+           <div class=" price-container center-alignment">
+            
+            <div class="section-heading">
+              <div class="price-heading">
+                Pricing
+              </div>
+              <div class="subtext">
+                No additional costs. Pay for what you use.
+              </div>
+            </div>
+
+            <div class="price-card-container">
+              <div class="outter-price-card">
+                <div class="middle-price-container">
+                    <div class="inner-price-container">
+  
+                      <div class="price-info card">
+                        <div class="price">$59/ <span>mo</span></div>
+                        <hr class="card-hr-line">
+                        <div class="price-text">Start your Front business now.  
+                          100% guaranteed money back. No questions asked.
+                        </div>
+                        <a href="" class="getting-started-btn">
+                          <span>Get Started  
+                            <i class="fa-solid fa-chevron-right"></i>
+                          </span>
+                        </a>
+                        <div class="no-credit-required">
+                          No credit card required.
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+
+                <div class="bulletpoint-container">
+                <div class="popup bulletpoint-content point-1">
                   <div class="bulletpoint-image">
                     <img src="/saas-project-assets/icons/components.svg" alt="components icon">
                   </div>
@@ -398,8 +524,8 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="bulletpoint-content point-2">
+            
+                <div class="popup bulletpoint-content point-2">
                   <div class="bulletpoint-image">
                     <img src="/saas-project-assets/icons/images.svg" alt="images icon">
                   </div>
@@ -413,7 +539,7 @@
                   </div>
                 </div>
                 
-                <div class="bulletpoint-content point-3">
+                <div class="popup bulletpoint-content point-3">
                   <div class="bulletpoint-image">
                     <img src="/saas-project-assets/icons/cancel.svg" alt="images icon">
                   </div>
@@ -427,7 +553,7 @@
                   </div>
                 </div>
 
-                <div class="bulletpoint-content point-4">
+                <div class="popup bulletpoint-content point-4">
                   <div class="bulletpoint-image">
                     <img src="/saas-project-assets/icons/moneyback.svg" alt="images icon">
                   </div>
@@ -440,108 +566,116 @@
                     </div>
                   </div>
                 </div>
-
+              </div>
               </div>
             </div>
           </div>
 
-          <div class="hire-us-container">
-            <div class="hire-us-content">
-              <div class="hire-us-title">
-                Hire us
-              </div>
-              <div class="hire-us-subtext">
-                Whatever your goal - we will get you there.
-              </div>
-              <hr class="hr-line">
-              <div class="quote">
-                <em>"It's beautiful and the coding is done quickly and seamlessly.
-                  Keep it up!"</em>
-              </div>
-              
-              <div class="name-and-title hire-us">
-                <strong>James Austin</strong>
-              <h6>Executive Creative Director, HubSpot</h6>
-              </div>
-              <div class="people-images">
-                <div class="person">
-                  <img src="/saas-project-assets/people/woman_one.jpg" alt="">
-                </div>
-                <div class="person man">
-                  <img src="/saas-project-assets/people/man_one.jpg" alt="">
-                </div>
-                <div class="person">
-                  <img src="/saas-project-assets/people/woman_two.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            
-            <div class="form-outline">
-              <div class="hire-us-text">
-                Fill out the form and we'll be in touch as soon as possible
-              </div>
-              <form class="hire-us-form">
-                <label for="firstName"></label>
-                <input class="personal-info" id="firstName" type="text" name="firstName" placeholder=" First name">
-                
-                <label for="lastName"></label>
-                <input class="personal-info" id="lastName" type="text" name="lastName" placeholder=" Last name">
-
-                <label for="email"></label>
-                <input class="personal-info" id="email" type="email" name="email" placeholder=" Work Email">
-
-                <label for="companyWebsite"></label>
-                <input class="personal-info" id="workEmail" type="email" name="workEmail" placeholder=" Company website">
-                <select>
-                  <option value="" selected disabled>Budget</option>
-                </select>
-                <select>
-                  <option value="" selected disabled>Country</option>
-                </select>
-                <textarea name="comments" id="comments" rows="5">Tell us more about your project, needs, and timeline.</textarea>
-                
-                <br>
-                <div class="privacy-policy">
-          
-                    <div class="check-container">
-
-                      <label id="label-input" for="checkbox"></label>
-                      <input type="checkbox" name="checkbox">
-                    </div>
-                    <div class="check-content">
-                      Yes, I'd like to receive occasional emails from Front.  I have the right to opt out at any time.
-                      <a href="">View privacy policy</a>
-                    </div>
-
-                </div>
-                <a href="" class="getting-started-btn">
-                  <span>Get Started  
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </span>
-                </a>
-              </form>
-            </div>
-
-          </div>
         </div>  
-          
+        
       </section>
-  
-      <footer>
-        <div class="footer-logo project-logo">
-          <img src="/saas-project-assets/project_logo/logo.svg" alt="footer project logo">
-        </div>
-        <div v class="footer-contact-info">
-          
-          <div class="address-info">
-            <div class="address-icon">
-              <i class="fa-solid fa-location-arrow"></i>
-            </div>
-            <div class="address">
-              153 Williamsson Plaza, Maggieberg
-            </div>
-          </div>
+      
+    </div>
 
+    <div class="hire-us-container">
+      <div class="hire-us-content">
+        <div class="hire-us-title">
+          Hire us
+        </div>
+        <div class="hire-us-subtext">
+          Whatever your goal - we will get you there.
+        </div>
+        <hr class="hr-line">
+        <div class="quote">
+          <em>"It's beautiful and the coding is done quickly and seamlessly.
+            Keep it up!"</em>
+        </div>
+        
+        <div class="name-and-title hire-us">
+          <strong>James Austin</strong>
+        <h6>Executive Creative Director, HubSpot</h6>
+        </div>
+        <div class="people-images">
+          <div class="person">
+            <img src="/saas-project-assets/people/woman_one.jpg" alt="">
+          </div>
+          <div class="person man">
+            <img src="/saas-project-assets/people/man_one.jpg" alt="">
+          </div>
+          <div class="person">
+            <img src="/saas-project-assets/people/woman_two.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="hire-us-text">
+        <div class="outter-form-outline">
+          <div class="form-outline">
+          <div class="paragraph-color">
+          Fill out the form and we'll be in touch as soon as possible
+        </div>
+          <form class="hire-us-form">
+          <label for="firstName"></label>
+          <input class="personal-info" id="firstName" type="text" name="firstName" placeholder=" First name">
+          
+          <label for="lastName"></label>
+          <input class="personal-info" id="lastName" type="text" name="lastName" placeholder=" Last name">
+
+          <label for="email"></label>
+          <input class="personal-info" id="email" type="email" name="email" placeholder=" Work Email">
+
+          <label for="companyWebsite"></label>
+          <input class="personal-info" id="workEmail" type="email" name="workEmail" placeholder=" Company website">
+          <select>
+            <option value="" selected disabled>Budget</option>
+          </select>
+          <select>
+            <option value="" selected disabled>Country</option>
+          </select>
+          <textarea name="comments" id="comments" rows="5">Tell us more about your project, needs, and timeline.</textarea>
+          
+          <br>
+          <div class="privacy-policy">
+    
+              <div class="check-container">
+
+                <label id="label-input" for="checkbox"></label>
+                <input type="checkbox" name="checkbox">
+              </div>
+              <div class="check-box">
+                Yes, I'd like to receive occasional emails from Front.  I have the right to opt out at any time.
+                <a href="">View privacy policy</a>
+              </div>
+
+          </div>
+          <a href="" class="getting-started-btn">
+            <span>Get Started  
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </a>
+        </form>
+      </div>
+    </div>
+    </div>
+</div>
+      <footer >
+        <div class="top-footer">
+
+          <div class="company-info">
+            <div class="footer-logo project-logo">
+              <img src="/saas-project-assets/project_logo/logo.svg" alt="footer project logo">
+            </div>
+            <div v class="footer-contact-info">
+              
+              <div class="address-info">
+                <div class="address-icon">
+                  <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <div class="address">
+                  153 Williamsson Plaza, Maggieberg
+                </div>
+              </div>
+            </div>
           <div class="footer-phone-info">
             <div class="footer-phone-icon">
               <i class="fa-solid fa-phone"></i>
@@ -560,20 +694,30 @@
             </div>
             <ul class="list-items">
               <li class="list-item">
-                About
+              <a href="#">
+                About</a>
+                
               </li>
               <li class="list-item hiring">
-                Careers
+              <a href="#">
+                Careers</a>
+                
                 <div> We're Hiring</div>
               </li>
               <li class="list-item">
-                Blog
+              <a href="#">
+                Blog</a>
+                
               </li>
               <li class="list-item">
-                Customers
+              <a href="#">
+                Customers</a>
+                
               </li>
               <li class="list-item">
-                Hire us
+              <a href="#">
+                Hire us</a>
+                
               </li>
             </ul>
           </div>
@@ -584,16 +728,24 @@
             </div>
             <ul class="feature list-items">
               <li class="list-item">
-                Press
+              <a href="#">
+                Press</a>
+                
               </li>
               <li class="list-item">
-                Release Notes
+              <a href="#">
+                Release Notes</a>
+                
               </li>
               <li class="list-item">
-                Integrations  
+              <a href="#">
+                Integrations  </a>
+                
               </li>
               <li class="list-item">
-                Pricing
+              <a href="#">
+                Pricing</a>
+                
               </li>
             </ul>
           </div>
@@ -604,19 +756,29 @@
             </div>
             <ul class="documentation list-items">
               <li class="list-item">
-                Support
+              <a href="#">
+                Support</a>
+                
               </li>
               <li class="list-item">
-                Docs
+              <a href="#">
+                Docs</a>
+                
               </li>
               <li class="list-item">
-                Status
+              <a href="#">
+                Status</a>
+                
               </li>
               <li class="list-item">
-                API Reference
+              <a href="#">
+                API Reference</a>
+                
               </li>
               <li class="list-item">
-                Tech Requirements
+              <a href="#">
+                Tech Requirements</a>
+                
               </li>
             </ul>
           </div>
@@ -627,23 +789,31 @@
             </div>
             <ul class="resources list-items">
 
-              <li class="resource list-item">
-                <div class="footer-info-icon">
-                  <i class="fa-solid fa-circle-info"></i>
-                </div>
-                Help
+              <li class="help list-item">
+                <a href="#">
+                  <div class="footer-info-icon">
+                    
+                    <i class="fa-solid fa-circle-info"></i>
+                    Help
+                  </div>
+                </a>
               </li>
-              <li class=" phone list-item">
-                <div class="footer-user-icon">
-                  <i class="fa-solid fa-circle-user"></i>
-                </div>
-                Your Account
+              <li class=" your-account list-item">
+                <a href="#">
+                  <div class="footer-user-icon">
+                    <i class="fa-solid fa-circle-user"></i>
+                    Your Account
+                  </div>
+                </a>
               </li>
             </ul>
-
+          </div>
           </div>
         </div>
-        <hr class="hr-line">
+        
+
+        
+        <hr class="hr-line-bottom">
         <div class="bottom-footer">
           <div class="footer-policy">
             <ul>
@@ -660,7 +830,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        
         <ul class="social-media-links">
           <li class="social-link">
             <a href="">
@@ -688,6 +858,8 @@
             </select>
           </li>
         </ul>
+      </div>
+
         <div class="copyright">
           &copy; Front <script>document.write(new Date().getFullYear())</script>
           All Rights Reserved
@@ -698,8 +870,9 @@
           </div>
           
         </div>
-      </div> 
+       
     </footer>
+
     <div class="to-top-btn">
       <div>
         <a id="scrollUp" href="#pageTop">
@@ -708,7 +881,57 @@
       </div>
     </div>
 
-    
+  
+  </body>
 
-</body>
+  <script type="text/javascript">
+    const nav = document.getElementById("topNav");
+    
+    window.onscroll = function (){
+    if (window.pageYOffset > 250){
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky")
+    };
+
+
+  }
+  
+    const slide = document.getElementById("slideImage")
+
+    window.onscroll = function (){
+      if (window.pageYOffset > 800){
+        slide.classList.add("active");
+
+    } else {
+      slide.classList.remove("active")
+    };
+
+    if (window.pageYOffset> 11000){
+      slide.classList.add("popup")
+    } else{
+      slide.classList.remove("popup")
+    }
+  }
+
+    window.onload = function (){
+      if (window.pageYOffset){
+        slide.classList.add("load");
+    } else {
+      slide.classList.remove("load")
+    }
+  }
+    
+    const navButton = document.querySelector("button[aria-expanded]");
+    
+    function toggleNav({ target }){
+      console.log('click')
+      const expanded = target.getAttribute("aria-expanded") === 'true' || false;
+      navButton.setAttribute("aria-expanded", !expanded);
+      console.log(expanded);
+    }
+
+    navButton.addEventListener("click", toggleNav);
+
+  </script>
 </html>
