@@ -104,7 +104,6 @@
     display: none
   }
 
-
   .hamburger-wrap .toggle{
     opacity: 0;
     width: 50px;
@@ -988,16 +987,20 @@
 
 
 @media screen and (min-width: 768px) {  
+  
+  
+  [aria-expandedd="true"] ~ ul li a {
+    margin: 0;
+  }
 
-
-    /***centered sections**/
-    .hubspot-section,
-    header,
-    .why-front-list,
-    footer{
-      width: 80%;
-      margin: 0 auto;
-    }
+  /***centered sections**/
+  .hubspot-section,
+  header,
+  .why-front-list,
+  footer{
+    width: 80%;
+    margin: 0 auto;
+  }
 
 
 
@@ -1005,6 +1008,7 @@
   {
     display:none
   }
+
 
 
   .container.inner{
@@ -1020,7 +1024,7 @@
   }
 
   button.hamburger-wrap {
-    top: -30px;
+    top: 39px;
     height: 56px;
     position: relative;
     background-color: transparent;
@@ -1038,6 +1042,10 @@
   }
   .hamburger-wrap .hamburger > div {
     top: 3px
+  }
+
+  .nav-links{
+    top:9rem;
   }
 
   .header-text-box h1 {
@@ -1202,9 +1210,6 @@
     display:none
   }
 
-
-  
-
   .woman-and-dots {
     display: grid;
     grid-template-columns: repeat(38, 1fr);
@@ -1282,8 +1287,8 @@
 
   .company-and-features {
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    padding-left: 0;
   }
-
   
   .hire-us-form{
     display: grid;
@@ -1339,6 +1344,10 @@
   .footer{
     padding-top: 0;
   }
+
+  .copyright{
+    padding-left: 0;
+  }
 }
 
 
@@ -1351,8 +1360,7 @@
 
 
 
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px)  {
 
 
   [aria-expanded="false"] ~ ul {
@@ -1376,6 +1384,9 @@
   .nav-links,
   .ul.resources.list-item{
     display:flex;
+  }
+  .nav-link{
+    padding-right: 2rem;
   }
 
   .header-background-overlay {
@@ -1881,31 +1892,6 @@
 
 }
 
-
-
-
-
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) *
-@media only screen and (min-width: 600px) {
-
-}
-/* Medium devices (landscape tablets, 768px and up) *
-@media only screen and (min-width: 768px) {
-
-}
-/* Large devices (laptops/desktops, 992px and up) *
-@media only screen and (min-width: 992px) {
-  
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) *
-@media only screen and (min-width: 1200px) {
-  
-}
-
-*/
 
 /**RESPONSIVE CARDS**/
 /**accommodates mobile responsive**/
