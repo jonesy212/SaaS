@@ -1354,13 +1354,7 @@
 
 
 
-
-
-
-
-
-
-@media only screen and (min-width: 1200px)  {
+@media only screen and (min-width: 920px)  {
 
 
   [aria-expanded="false"] ~ ul {
@@ -1381,18 +1375,22 @@
     display:block
   }
 
+  .navbar{
+    width: 92%
+  }
   .nav-links,
   .ul.resources.list-item{
     display:flex;
   }
-  .nav-link{
+
+  .nav-link i.fa-chevron-down  {
     padding-right: 2rem;
   }
 
   .header-background-overlay {
     margin-top: -10rem;
-    background: linear-gradient(-63deg, transparent 40em , #F7FBFA 1em ),  
-    linear-gradient(to top, #EFF3F6 80%,transparent 5em ,#EFF3F6 80%);
+    background: linear-gradient(-68deg, transparent 30em , #F7FBFA 1em ), 
+    linear-gradient(to top, #EFF3F6 78%,transparent 5em ,#EFF3F6 80%);
   }
 
   .project-logo{
@@ -1400,24 +1398,17 @@
     margin: 2rem 0;
   }
 
-  .navbar{
-    width: 86%;
-  }
 
-  .nav-links,
-  .top-nav-container li:first-child,
-  .top-nav-container ul
+
+  .nav-links
   { 
     padding: 0;
   }
 
-  .top-nav-container li{
-    align-items: center;
-  }
 
   .bottom-nav-link-container{
     height: 4rem;
-    margin-top: 1rem;
+
     margin-bottom: 1rem;
   }
 
@@ -1439,7 +1430,7 @@
   }
 
   .logo-icons{
-    width: 107%;
+    width: 100%;
     grid-gap: 1rem;
     margin: 2rem auto;
     padding-left: 81px;
@@ -1468,6 +1459,10 @@
     justify-self: end;
   }
 
+  .image-container{
+    transform: translateY(52px);
+  }
+
   .large-container{
     display: flex;
   }
@@ -1488,9 +1483,13 @@
 
   }
 
+  .woman-and-dots{
+    grid-template-rows: 315px;
+  }
+
   .logos{
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   }
   .logo .uber,
   .logo .slack{
@@ -1622,7 +1621,7 @@
   }
 
   .getting-started-container{
-    padding: 2rem;
+    padding: 0 2rem;
     padding-right: 4rem
   }
 
@@ -1637,8 +1636,9 @@
     position: relative;
     bottom: 9px;  
     margin: 0;
-    width: 13rem;
+    width: 9rem;
     height: 0.2rem;
+    z-index: -1;
   }
   .center.separator{
     align-self: center;
@@ -1698,7 +1698,7 @@
   
   .woman-and-dots{
     margin-top: 7rem;
-    grid-template-rows: 17rem;
+    grid-template-rows: 15.5rem;
   }
 
   .woman-and-dots .dots {
@@ -1707,7 +1707,7 @@
     grid-column: 3/15;
   }
   .woman-and-dots img:first-child{
-    grid-column: 6/37
+    grid-column: 6/42 
   }
 
   .hubspot-section{
@@ -1734,7 +1734,7 @@
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     height: 27rem;
-    width: 32rem
+    width: 28rem
   }
 
 
@@ -1780,7 +1780,7 @@
     display: flex;
     margin: 0 2rem;
     margin-top: 3rem;
-    padding: 2rem 10rem;
+    padding: 2rem 2rem;
   }
   .hire-us-content{
     align-self: center;
@@ -1887,11 +1887,37 @@
     width:70%;
     margin: 1rem auto
   }
-
- 
-
 }
 
+@media only screen and (min-width: 1400px){
+  .left-items .list-items {
+    left: 6rem;
+  }
+
+  .why-front-list .list-items {
+    right: 4rem;
+  }
+
+  .woman-and-dots {
+    grid-template-rows: 19.5rem;
+  }
+
+  .top-nav-container ul {
+    padding: 0
+  }
+  .top-nav li:first-child(){
+    padding: 0
+  }
+
+  .header-background-overlay{
+    background: linear-gradient(-65deg, transparent 35em , #F7FBFA 1em ), 
+    linear-gradient(to top, #EFF3F6 78%,transparent 5em ,#EFF3F6 80%);
+  }
+
+  .weave-icon{
+    justify-self: revert;
+  }
+}
 
 /**RESPONSIVE CARDS**/
 /**accommodates mobile responsive**/

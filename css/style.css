@@ -22,7 +22,7 @@ header{
 }
 
 .top-nav-container ul{
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   justify-content: space-between;
   font-size: .9rem;
 }
@@ -46,7 +46,7 @@ header{
 }
 
 .top-nav li:first-child{
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .show{
