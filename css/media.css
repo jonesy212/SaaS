@@ -517,7 +517,7 @@
     border: .5px solid transparent;
     box-shadow: 0 0 8px 0px rgb(83 83 83 / 8%);
     position: absolute;
-    top: 33%;
+    top: 50%;
     right: 42%;
   }
   
@@ -602,7 +602,12 @@
   {
     margin: 0 auto;
   }
-
+  .top-hr-line{
+    margin: 1rem 0;
+    border: none;
+    height: .5px;
+    background-color: rgb(211, 209, 209);
+  }
   .weebly, .spotify{
     display: none
   }
@@ -624,7 +629,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
   }
   
   .price,
@@ -829,7 +833,6 @@
     grid-template-columns: repeat(auto-fit,minmax(175px, 1fr));
     justify-items: start;
     margin-top: 3rem;
-    padding:1rem
   }
   
   .footer-title{
@@ -1848,7 +1851,7 @@
   }
 
   .company-and-features{
-    margin-top: 1rem;
+    margin-top: 2rem;
     grid-gap: 2rem;
   }
 
@@ -1899,7 +1902,7 @@
   }
 
   .woman-and-dots {
-    grid-template-rows: 19.5rem;
+    grid-template-rows: 19rem;
   }
 
   .top-nav-container ul {
@@ -1910,10 +1913,13 @@
   }
 
   .header-background-overlay{
-    background: linear-gradient(-65deg, transparent 35em , #F7FBFA 1em ), 
+    background: linear-gradient(-67deg, transparent 33em , #F7FBFA 1em ), 
     linear-gradient(to top, #EFF3F6 78%,transparent 5em ,#EFF3F6 80%);
   }
 
+  .logo-icons {
+    grid-template-columns: 1fr 2fr 4fr;
+  }
   .weave-icon{
     justify-self: revert;
   }
